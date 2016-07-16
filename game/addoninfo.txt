@@ -1,0 +1,5 @@
+"AddonInfo"
+{
+    maps tne_1
+    IsPlayable 1
+}
