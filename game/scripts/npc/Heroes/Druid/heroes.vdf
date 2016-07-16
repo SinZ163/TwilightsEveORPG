@@ -5,6 +5,22 @@
     }
     "teve_druid_2" 
     {
+        "override_hero"         "npc_dota_hero_furion"
+
+        "AbilityLayout"         "4"
+        "Ability1"          "teve_druid_archdruid_wearbear"
+        "Ability2"          "teve_druid_archdruid_wearwolf"
+        "Ability3"          "teve_druid_archdruid_twister"
+        "Ability4"          "teve_druid_archdruid_thunderstorm"
+        "Ability5"          "teve_attributes" //Replace attribute_bonus with code to replace str/agi/int
+
+        "AttributePrimary"      "DOTA_ATTRIBUTE_INTELLECT"
+        "AttributeBaseStrength"     "40"
+        "AttributeStrengthGain"     "1.5"
+        "AttributeBaseAgility"      "40"
+        "AttributeAgilityGain"      "2"
+        "AttributeBaseIntelligence" "60"
+        "AttributeIntelligenceGain" "2.5"    
     }
     "teve_druid_3_shapeshifter"
     {

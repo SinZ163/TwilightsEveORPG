@@ -1,3 +1,51 @@
 "DOTAAbilities"
 {
+    "teve_druid_archdruid_wearbear"
+    {
+        "BaseClass" "ability_lua"
+        "ScriptFile"    "abilities/druid/archdruid/Wearbear.lua"
+        "AbilityTextureName"    "lone_druid_true_form"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"// | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+        "MaxLevel" "5"
+        "LevelsBetweenUpgrades" "2"
+        "RequiredLevel" "2"
+    }
+    "teve_druid_archdruid_wearwolf"
+    {
+        "BaseClass" "ability_lua"
+        "ScriptFile"    "abilities/druid/archdruid/Wearwolf.lua"
+        "AbilityTextureName"    "lycan_shapeshift"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"// | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+        "MaxLevel" "5"
+        "LevelsBetweenUpgrades" "2"
+        "RequiredLevel" "1"
+    }
+    "teve_druid_archdruid_twister"
+    {
+        "BaseClass" "ability_lua"
+        "ScriptFile"    "abilities/druid/archdruid/Twister.lua"
+        "AbilityTextureName"    "invoker_tornado"
+        //TODO: use a LINE target
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL"// | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+        "AbilityCastRange"  "700"
+        "AbilityCastPoint"  "0.1"
+        "AbilityCooldown"   "10.0"
+        "MaxLevel" "50"
+        "LevelsBetweenUpgrades" "2"
+        "RequiredLevel" "2"
+    }
+    "teve_druid_archdruid_thunderstorm"
+    {
+        "BaseClass" "ability_lua"
+        "ScriptFile"    "abilities/druid/archdruid/Thunderstorm.lua"
+        "AbilityType" "DOTA_ABILITY_TYPE_ULTIMATE" //Make sure this is on R
+        "AbilityTextureName"    "disruptor_static_storm"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"// | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+        "AbilityCastRange"  "650"
+        "AbilityCastPoint"  "0.3"
+        "AbilityCooldown"   "10.0"
+        "MaxLevel" "60"
+        "LevelsBetweenUpgrades" "2"
+        "RequiredLevel" "4"
+    }
 }

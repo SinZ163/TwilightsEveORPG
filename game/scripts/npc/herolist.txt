@@ -1,0 +1,5 @@
+"CustomHeroList"
+{
+	"npc_dota_hero_furion" "-1"
+    "npc_dota_hero_invoker" "-1"
+}
