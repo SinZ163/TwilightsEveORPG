@@ -1,5 +1,7 @@
 "CustomHeroList"
 {
-	"npc_dota_hero_furion" "-1"
+    "npc_dota_hero_furion" "-1"
     "npc_dota_hero_invoker" "-1"
+    "npc_dota_hero_tinker" "-1"
+    "npc_dota_hero_meepo" "-1"
 }

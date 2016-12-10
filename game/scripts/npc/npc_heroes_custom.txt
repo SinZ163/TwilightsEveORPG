@@ -5,4 +5,23 @@
 // the specified key-value combinations.  Use override_hero <hero_to_override> for this.
 "DOTAHeroes"
 {
+    "teve_novice"
+    {
+        "override_hero"         "npc_dota_hero_meepo"
+        
+        "AbilityLayout"         "2"
+        "Ability1"          "teve_novice_frenzy"
+        "Ability2"          "teve_novice_attributes"
+        "Ability3"          "teve_attributes" //Replace attribute_bonus with code to replace str/agi/int
+        "Ability4"          ""
+        "Ability5"          ""
+        
+        "AttributePrimary"      "DOTA_ATTRIBUTE_STRENGTH"
+        "AttributeBaseStrength"     "7"
+        "AttributeStrengthGain"     "1.25"
+        "AttributeBaseAgility"      "6"
+        "AttributeAgilityGain"      "1"
+        "AttributeBaseIntelligence" "6"
+        "AttributeIntelligenceGain" "1"
+    }
 }

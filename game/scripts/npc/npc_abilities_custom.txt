@@ -16,4 +16,29 @@
         "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
         "MaxLevel"  "0"
     }
+    "teve_novice_frenzy"
+    {
+        "BaseClass" "ability_lua"
+        "ScriptFile"    "abilities/novice/Frenzy.lua"
+        "AbilityTextureName"    "alchemist_chemical_rage"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+        "MaxLevel"  "5"
+        "LevelsBetweenUpgrades" "2"
+        "RequiredLevel" "1"
+        
+        "precache"
+        {
+            "particle"  "particles/items2_fx/mask_of_madness.vpcf"
+        }
+    }
+    "teve_novice_attributes"
+    {
+        "BaseClass" "ability_lua"
+        "ScriptFile"    "abilities/novice/Attributes.lua"
+        "AbilityType"   "DOTA_ABILITY_TYPE_ATTRIBUTES"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "MaxLevel"  "5"
+        "LevelsBetweenUpgrades" "2"
+        "RequiredLevel" "1"
+    }
 }
