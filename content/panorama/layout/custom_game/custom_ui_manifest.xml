@@ -3,9 +3,38 @@
         <include src="file://{resources}/scripts/ModDota/LocalStorage.js" />
     </scripts>
     <script>
-        $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("lower_hud").FindChildTraverse("center_with_stats").FindChildTraverse("center_block").FindChildTraverse("StatBranch").AddClass("NonHero");
-        $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("lower_hud").FindChildTraverse("center_with_stats").FindChildTraverse("center_block").FindChildTraverse("StatBranch").SetPanelEvent("onmouseover", function(){});
+        var newUI = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("lower_hud").FindChildTraverse("center_with_stats").FindChildTraverse("center_block");
+        //try the neat way to remove the tree itself
+        newUI.FindChildTraverse("StatBranch").AddClass("NonHero");
+        //that bar that grows from level 1 to 25 is annoying
+        newUI.FindChildTraverse("StatBranch").FindChildTraverse("StatBranchGraphics").FindChildTraverse("StatBranchChannel").style.visibility = "collapse";
+        //you are not spawning the talent UI, fuck off
+        newUI.FindChildTraverse("StatBranch").SetPanelEvent("onmouseover", function(){});
+        newUI.FindChildTraverse("StatBranch").SetPanelEvent("onactivate", function(){});
+        //fuck backpack UI
+        newUI.FindChildTraverse("inventory").FindChildTraverse("inventory_items").FindChildTraverse("inventory_backpack_list").style.visibility = "collapse";
+        //Spawn our new superior stats
+        if (!newUI.FindChildTraverse("inventory").FindChildTraverse("inventory_items").FindChildTraverse("stragiint")) {
+            $.CreatePanel("DOTAHUDStrAgiInt", newUI.FindChildTraverse("inventory").FindChildTraverse("inventory_items"), "stragiint");
+        }
 
+        //AltPressed makes it actually visible
+        newUI.FindChildTraverse("inventory").FindChildTraverse("inventory_items").FindChildTraverse("stragiint").AddClass("AltPressed");
+        //Between test client and main client, they are trying to make it down flow, fuck that I want right still
+        newUI.FindChildTraverse("inventory").FindChildTraverse("inventory_items").FindChildTraverse("stragiint").style.flowChildren = "right";
+        //they have it hardcoded to something tiny, lets fix it.
+        newUI.FindChildTraverse("inventory").FindChildTraverse("inventory_items").FindChildTraverse("stragiint").style.width = "100%";
+        //It was too close to inventory, move it down a bit.
+        newUI.FindChildTraverse("inventory").FindChildTraverse("inventory_items").FindChildTraverse("stragiint").style.marginTop = "5px";
+        
+        //Fuck circles, rectangles are cooler
+        newUI.FindChildTraverse("inventory").FindChildTraverse("inventory_items").FindChildTraverse("stragiint").FindChildTraverse("StrengthIcon").style.borderRadius = "0px";
+        newUI.FindChildTraverse("inventory").FindChildTraverse("inventory_items").FindChildTraverse("stragiint").FindChildTraverse("AgilityIcon").style.borderRadius = "0px";
+        newUI.FindChildTraverse("inventory").FindChildTraverse("inventory_items").FindChildTraverse("stragiint").FindChildTraverse("IntelligenceIcon").style.borderRadius = "0px";
+        //#WebScale
+        newUI.FindChildTraverse("inventory").FindChildTraverse("inventory_items").FindChildTraverse("stragiint").FindChildTraverse("StrengthIcon").style.width = "100%";
+        newUI.FindChildTraverse("inventory").FindChildTraverse("inventory_items").FindChildTraverse("stragiint").FindChildTraverse("AgilityIcon").style.width = "100%";
+        newUI.FindChildTraverse("inventory").FindChildTraverse("inventory_items").FindChildTraverse("stragiint").FindChildTraverse("IntelligenceIcon").style.width = "100%";
     </script>
     <Panel>
         <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/hud.xml" />
