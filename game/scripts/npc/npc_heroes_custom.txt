@@ -14,7 +14,16 @@
         "Ability2"          "teve_novice_attributes"
         "Ability3"          "teve_attributes" //Replace attribute_bonus with code to replace str/agi/int
         "Ability4"          ""
-        "Ability5"          ""
+        
+        //Get fucked talents
+        "Ability10"         ""
+        "Ability11"         ""
+        "Ability12"         ""
+        "Ability13"         ""
+        "Ability14"         ""
+        "Ability15"         ""
+        "Ability16"         ""
+        "Ability17"         ""
         
         "AttributePrimary"      "DOTA_ATTRIBUTE_STRENGTH"
         "AttributeBaseStrength"     "7"

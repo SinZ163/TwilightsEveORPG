@@ -35,7 +35,7 @@
     {
         "BaseClass" "ability_lua"
         "ScriptFile"    "abilities/novice/Attributes.lua"
-        "AbilityType"   "DOTA_ABILITY_TYPE_ATTRIBUTES"
+        "AbilityTextureName"   "attribute_bonus"
         "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE"
         "MaxLevel"  "5"
         "LevelsBetweenUpgrades" "2"

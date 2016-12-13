@@ -13,6 +13,16 @@
         "Ability3"          "teve_druid_archdruid_twister"
         "Ability4"          "teve_druid_archdruid_thunderstorm"
         "Ability5"          "teve_attributes" //Replace attribute_bonus with code to replace str/agi/int
+        
+        //Get fucked talents
+        "Ability10"         ""
+        "Ability11"         ""
+        "Ability12"         ""
+        "Ability13"         ""
+        "Ability14"         ""
+        "Ability15"         ""
+        "Ability16"         ""
+        "Ability17"         ""
 
         "AttributePrimary"      "DOTA_ATTRIBUTE_INTELLECT"
         "AttributeBaseStrength"     "40"
