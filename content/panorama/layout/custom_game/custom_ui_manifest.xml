@@ -13,28 +13,6 @@
         newUI.FindChildTraverse("StatBranch").SetPanelEvent("onactivate", function(){});
         //fuck backpack UI
         newUI.FindChildTraverse("inventory").FindChildTraverse("inventory_items").FindChildTraverse("inventory_backpack_list").style.visibility = "collapse";
-        //Spawn our new superior stats
-        if (!newUI.FindChildTraverse("inventory").FindChildTraverse("inventory_items").FindChildTraverse("stragiint")) {
-            $.CreatePanel("DOTAHUDStrAgiInt", newUI.FindChildTraverse("inventory").FindChildTraverse("inventory_items"), "stragiint");
-        }
-
-        //AltPressed makes it actually visible
-        newUI.FindChildTraverse("inventory").FindChildTraverse("inventory_items").FindChildTraverse("stragiint").AddClass("AltPressed");
-        //Between test client and main client, they are trying to make it down flow, fuck that I want right still
-        newUI.FindChildTraverse("inventory").FindChildTraverse("inventory_items").FindChildTraverse("stragiint").style.flowChildren = "right";
-        //they have it hardcoded to something tiny, lets fix it.
-        newUI.FindChildTraverse("inventory").FindChildTraverse("inventory_items").FindChildTraverse("stragiint").style.width = "100%";
-        //It was too close to inventory, move it down a bit.
-        newUI.FindChildTraverse("inventory").FindChildTraverse("inventory_items").FindChildTraverse("stragiint").style.marginTop = "5px";
-        
-        //Fuck circles, rectangles are cooler
-        newUI.FindChildTraverse("inventory").FindChildTraverse("inventory_items").FindChildTraverse("stragiint").FindChildTraverse("StrengthIcon").style.borderRadius = "0px";
-        newUI.FindChildTraverse("inventory").FindChildTraverse("inventory_items").FindChildTraverse("stragiint").FindChildTraverse("AgilityIcon").style.borderRadius = "0px";
-        newUI.FindChildTraverse("inventory").FindChildTraverse("inventory_items").FindChildTraverse("stragiint").FindChildTraverse("IntelligenceIcon").style.borderRadius = "0px";
-        //#WebScale
-        newUI.FindChildTraverse("inventory").FindChildTraverse("inventory_items").FindChildTraverse("stragiint").FindChildTraverse("StrengthIcon").style.width = "100%";
-        newUI.FindChildTraverse("inventory").FindChildTraverse("inventory_items").FindChildTraverse("stragiint").FindChildTraverse("AgilityIcon").style.width = "100%";
-        newUI.FindChildTraverse("inventory").FindChildTraverse("inventory_items").FindChildTraverse("stragiint").FindChildTraverse("IntelligenceIcon").style.width = "100%";
     </script>
     <Panel>
         <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/hud.xml" />
