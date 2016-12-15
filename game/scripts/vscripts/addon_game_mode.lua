@@ -64,9 +64,23 @@ function TwilightsEveORPG:InitGameMode()
     end
 	GameRules:GetGameModeEntity():SetCustomXPRequiredToReachNextLevel(levels)
     GameRules:GetGameModeEntity():SetUseCustomHeroLevels(true)
-    ListenToGameEvent( "dota_player_gained_level", Dynamic_Wrap( TwilightsEveORPG, "OnPlayerGainedLevel" ), self )
+    ListenToGameEvent("npc_spawned", Dynamic_Wrap(TwilightsEveORPG, "OnNPCSpawned"), self)
+    ListenToGameEvent("dota_player_gained_level", Dynamic_Wrap(TwilightsEveORPG, "OnPlayerGainedLevel"), self)
+    
 end
+function TwilightsEveORPG:OnNPCSpawned(keys)
+    local npc = EntIndexToHScript(keys.entindex)
 
+    -- when a hero first spawns
+    if npc:IsRealHero() and npc.bFirstSpawned == nil then
+        npc:AddItemByName("item_ring_of_protection")
+        npc:AddItemByName("item_ring_of_protection")
+        npc:AddItemByName("item_ring_of_protection")
+        npc:SwapItems(DOTA_ITEM_SLOT_1, DOTA_ITEM_SLOT_7)
+        npc:SwapItems(DOTA_ITEM_SLOT_2, DOTA_ITEM_SLOT_8)
+        npc:SwapItems(DOTA_ITEM_SLOT_3, DOTA_ITEM_SLOT_9)
+    end
+end
 function TwilightsEveORPG:OnPlayerGainedLevel( event )
 	local player = EntIndexToHScript( event.player )
 	local hero = player:GetAssignedHero()

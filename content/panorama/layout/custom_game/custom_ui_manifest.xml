@@ -11,7 +11,7 @@
         //you are not spawning the talent UI, fuck off
         newUI.FindChildTraverse("StatBranch").SetPanelEvent("onmouseover", function(){});
         newUI.FindChildTraverse("StatBranch").SetPanelEvent("onactivate", function(){});
-        //fuck backpack UI
+        //fuck backpack UI (We have Lua filling these slots with junk, and if the player can't touch them it should be effectively disabled)
         newUI.FindChildTraverse("inventory").FindChildTraverse("inventory_items").FindChildTraverse("inventory_backpack_list").style.visibility = "collapse";
     </script>
     <Panel>
