@@ -12,11 +12,11 @@
         "AbilityLayout"         "2"
         "Ability1"          "teve_novice_frenzy"
         "Ability2"          "teve_novice_attributes"
-        "Ability3"          "teve_attributes" //Replace attribute_bonus with code to replace str/agi/int
+        "Ability3"          ""
         "Ability4"          ""
         
         //Get fucked talents
-        "Ability10"         ""
+        "Ability10"         "teve_attributes" //Replace attribute_bonus with code to replace str/agi/int
         "Ability11"         ""
         "Ability12"         ""
         "Ability13"         ""
