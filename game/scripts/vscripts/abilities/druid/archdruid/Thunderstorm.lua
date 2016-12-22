@@ -18,11 +18,10 @@ function teve_druid_archdruid_thunderstorm:GetCastAnimation()
 end
 
 function teve_druid_archdruid_thunderstorm:GetManaCost(level)
-  
-      if level == -1 then
+
+    if level == -1 then
         level = self:GetLevel()
     end
-  
-	return 50 + (25 * level )
-end	
-  
+
+    return 50 + (25 * level )
+end
