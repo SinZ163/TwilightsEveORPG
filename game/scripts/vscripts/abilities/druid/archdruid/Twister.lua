@@ -41,7 +41,7 @@ function teve_druid_archdruid_twister:OnSpellStart()
     ProjectileManager:CreateLinearProjectile ( info )
     
     EmitSoundOn ( "Hero_Invoker.Tornado.Cast", self:GetCaster() )
-  end
+end
 
 function teve_druid_archdruid_twister:OnProjectileHit ( hTarget, vLocation )
     if hTarget ~= nil and ( not hTarget:IsMagicImmune() ) and ( not hTarget:IsInvulnerable() ) then
@@ -64,8 +64,7 @@ function teve_druid_archdruid_twister:OnProjectileHit ( hTarget, vLocation )
 end        
 
 function teve_druid_archdruid_twister:GetManaCost(level)
-  
-      if level == -1 then
+    if level == -1 then
         level = self:GetLevel()
     end
   
