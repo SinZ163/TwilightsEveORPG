@@ -1,3 +1,51 @@
 "DOTAAbilities"
 {
+    "teve_druid_shapeshifter_werebear"
+    {
+        "BaseClass" "ability_lua"
+        "ScriptFile"    "abilities/druid/shapeshifter/Werebear.lua"
+
+        "AbilityTextureName"    "lone_druid_true_form"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELED"
+
+        "MaxLevel"  "5"
+        "LevelsBetweenUpgrades" "2"
+        "RequiredLevel" "4"
+    }
+    "teve_druid_shapeshifter_werewolf"
+    {
+        "BaseClass" "ability_lua"
+        "ScriptFile"    "abilities/druid/shapeshifter/Werewolf.lua"
+
+        "AbilityTextureName"    "lycan_shapeshift"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELED"
+
+        "MaxLevel"  "5"
+        "LevelsBetweenUpgrades" "2"
+        "RequiredLevel" "1"
+    }
+    "teve_druid_shapeshifter_ferocity"
+    {
+        "BaseClass" "ability_lua"
+        "ScriptFile"    "abilities/druid/shapeshifter/Ferocity.lua"
+
+        "AbilityTextureName"    "alpha_wolf_critical_strike"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+        "MaxLevel"  "50"
+        "LevelsBetweenUpgrades" "2"
+        "RequiredLevel" "1"
+    }
+    "teve_druid_shapeshifter_lycanthrophy"
+    {
+        "BaseClass" "ability_lua"
+        "ScriptFile"    "abilities/druid/shapeshifter/Lycanthrophy.lua"
+
+        "AbilityTextureName"    "lycan_summon_wolves_invisibility"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+        "MaxLevel"  "60"
+        "LevelsBetweenUpgrades"  "2"
+        "RequiredLevel" "1"
+    }
 }
