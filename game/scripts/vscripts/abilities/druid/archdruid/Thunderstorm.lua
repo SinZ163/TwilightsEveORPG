@@ -4,7 +4,7 @@ LinkLuaModifier( "modifier_teve_druid_archdruid_thunderstorm_thinker", "abilitie
 function teve_druid_archdruid_thunderstorm:OnSpellStart()
     print("Thunderstorm from Lua!")
     local kv = {
-        duration = 1.2 --Fact check plz
+        duration = 2.5 --1.3s delay + 1.2s damage time
     }
     CreateModifierThinker( self:GetCaster(), self, "modifier_teve_druid_archdruid_thunderstorm_thinker", kv, self:GetCursorPosition(), self:GetCaster():GetTeamNumber(), false )
 end
