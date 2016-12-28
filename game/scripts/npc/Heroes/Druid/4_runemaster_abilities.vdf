@@ -1,3 +1,14 @@
 "DOTAAbilities"
 {
+    "teve_druid_runemaster_feral_rage"
+    {
+        "BaseClass" "ability_lua"
+        "ScriptFile"    "abilities/druid/runemaster/FeralRage.lua"
+        "AbilityCooldown"   "60.0"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+        "MaxLevel"  "50"
+        "LevelsBetweenUpgrades" "2"
+        "RequiredLevel" "50"
+    }
 }
