@@ -85,19 +85,19 @@ function TwilightsEveORPG:OnPlayerGainedLevel( event )
     local player = EntIndexToHScript( event.player )
     local hero = player:GetAssignedHero()
         
-        local currentCount = 0
-        local maxCount = 0
-        for i = 0, 5 do
-            local ability = hero:GetAbilityByIndex(i)
-            if (ability ~= nil) then
-                currentCount = currentCount + ability:GetLevel()
-                maxCount = maxCount + ability:GetMaxLevel()
-            end
+    local currentCount = 0
+    local maxCount = 0
+    for i = 0, 5 do
+        local ability = hero:GetAbilityByIndex(i)
+        if (ability ~= nil) then
+            currentCount = currentCount + ability:GetLevel()
+            maxCount = maxCount + ability:GetMaxLevel()
         end
-        if maxCount > hero:GetLevel() then
-            maxCount = hero:GetLevel()
-        end
-        hero:SetAbilityPoints(maxCount - currentCount)
+    end
+    if maxCount > hero:GetLevel() then
+        maxCount = hero:GetLevel()
+    end
+    hero:SetAbilityPoints(maxCount - currentCount)
 end
 
 function getExpForLevel(level)
