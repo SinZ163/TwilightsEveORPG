@@ -15,7 +15,7 @@ function teve_druid_archdruid_werewolf:OnChannelFinish(interrupted)
         self:GetCaster():RemoveModifierByName("modifier_teve_druid_archdruid_werewolf")
         return
     elseif self:GetCaster():HasModifier("modifier_teve_druid_archdruid_werebear") then
-        --Removing werewolf, going to werebear
+        --Removing werebear, going to werewolf
         self:GetCaster():RemoveModifierByName("modifier_teve_druid_archdruid_werebear")
     end
     --We might have been human or werebear, who cares we are werewolf now.

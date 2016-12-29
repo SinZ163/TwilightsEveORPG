@@ -28,7 +28,7 @@ function modifier_teve_druid_archdruid_werewolf:DeclareFunctions()
 end
 
 function modifier_teve_druid_archdruid_werewolf:GetModifierModelChange()
-    return "models/heroes/lycan/summon_wolves.vmdl"
+    return "models/items/beastmaster/boar/fotw_wolf/fotw_wolf.vmdl"
 end
 
 function modifier_teve_druid_archdruid_werewolf:GetModifierMoveSpeedOverride(params)

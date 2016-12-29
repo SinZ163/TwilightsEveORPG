@@ -28,7 +28,7 @@ function modifier_teve_druid_archdruid_werebear:DeclareFunctions()
 end
 
 function modifier_teve_druid_archdruid_werebear:GetModifierModelChange()
-    return "models/heroes/lone_druid/true_form.vmdl"
+    return "models/items/lone_druid/bear/spirit_of_the_atniw/spirit_of_the_atniw.vmdl"
 end
 
 function modifier_teve_druid_archdruid_werebear:GetModifierMoveSpeedOverride(params)
