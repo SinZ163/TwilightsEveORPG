@@ -42,7 +42,7 @@
         "AbilityTextureName"    "alpha_wolf_critical_strike"
         "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
-        "MaxLevel"  "50"
+        "MaxLevel"  "40"
         "LevelsBetweenUpgrades" "2"
         "RequiredLevel" "2"
     }
