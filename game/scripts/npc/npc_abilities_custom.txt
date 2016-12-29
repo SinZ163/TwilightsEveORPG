@@ -25,6 +25,8 @@
         "MaxLevel"  "5"
         "LevelsBetweenUpgrades" "2"
         "RequiredLevel" "1"
+
+        "AbilityCooldown"   "15"
         
         "precache"
         {
