@@ -13,18 +13,18 @@ function modifier_teve_druid_runemaster_werewolf:OnDestroy(kv)
 end
 
 function modifier_teve_druid_runemaster_werewolf:DeclareFunctions()
-	local funcs = {
+    local funcs = {
         MODIFIER_PROPERTY_MODEL_CHANGE,
         MODIFIER_PROPERTY_MOVESPEED_BASE_OVERRIDE,
         MODIFIER_PROPERTY_STATS_STRENGTH_BONUS,
-		MODIFIER_PROPERTY_STATS_AGILITY_BONUS,
+        MODIFIER_PROPERTY_STATS_AGILITY_BONUS,
         MODIFIER_PROPERTY_STATS_INTELLECT_BONUS,
         MODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE,
         MODIFIER_PROPERTY_ATTACK_RANGE_BONUS,
         MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
         MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS
-	}
-	return funcs
+    }
+    return funcs
 end
 
 function modifier_teve_druid_runemaster_werewolf:GetModifierModelChange()
@@ -65,6 +65,6 @@ function modifier_teve_druid_runemaster_werewolf:GetModifierBaseAttackTimeConsta
 end
 
 function modifier_teve_druid_runemaster_werewolf:GetModifierPhysicalArmorBonus(params)
-    --Runemaster already has 5 armor, we want 1500
+    --Runemaster already has 5 armor, we want 1000
     return 1000-5
 end

@@ -13,18 +13,18 @@ function modifier_teve_druid_archdruid_werewolf:OnDestroy(kv)
 end
 
 function modifier_teve_druid_archdruid_werewolf:DeclareFunctions()
-	local funcs = {
+    local funcs = {
         MODIFIER_PROPERTY_MODEL_CHANGE,
         MODIFIER_PROPERTY_MOVESPEED_BASE_OVERRIDE,
         MODIFIER_PROPERTY_STATS_STRENGTH_BONUS,
-		MODIFIER_PROPERTY_STATS_AGILITY_BONUS,
+        MODIFIER_PROPERTY_STATS_AGILITY_BONUS,
         MODIFIER_PROPERTY_STATS_INTELLECT_BONUS,
         MODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE,
         MODIFIER_PROPERTY_ATTACK_RANGE_BONUS,
         MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
         MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS
-	}
-	return funcs
+    }
+    return funcs
 end
 
 function modifier_teve_druid_archdruid_werewolf:GetModifierModelChange()

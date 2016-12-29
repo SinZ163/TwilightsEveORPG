@@ -7,7 +7,7 @@
 #base "Heroes/Druid/4_summoner_abilities.vdf"
 "DOTAAbilities"
 {
-	"Version"		"1"
+    "Version"       "1"
     
     "teve_attributes"
     {

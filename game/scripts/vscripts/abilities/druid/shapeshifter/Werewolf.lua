@@ -27,5 +27,5 @@ function teve_druid_shapeshifter_werewolf:GetChannelTime()
 end
 
 function teve_druid_shapeshifter_werewolf:GetCastAnimation()
-    return ACT_DOTA_CAST_ABILITY_2
+    return ACT_DOTA_CAST_ABILITY_4
 end

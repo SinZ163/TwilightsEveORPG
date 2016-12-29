@@ -23,7 +23,7 @@ function teve_druid_runemaster_werebear:OnChannelFinish(interrupted)
 end
 
 function teve_druid_runemaster_werebear:GetChannelTime()
-    return 6 - self:GetLevel()
+    return 5.5 - self:GetLevel()
 end
 
 function teve_druid_runemaster_werebear:GetCastAnimation()

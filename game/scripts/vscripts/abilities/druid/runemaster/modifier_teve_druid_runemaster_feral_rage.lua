@@ -12,7 +12,7 @@ function modifier_teve_druid_runemaster_feral_rage:DeclareFunctions()
     local funcs = {
         MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE,
         MODIFIER_EVENT_ON_ATTACK_LANDED
-	}
+    }
     return funcs
 end
 

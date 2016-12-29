@@ -10,7 +10,7 @@
 
         "MaxLevel"  "5"
         "LevelsBetweenUpgrades" "2"
-        "RequiredLevel" "4"
+        "RequiredLevel" "120"
 
         "precache"
         {
@@ -27,7 +27,7 @@
 
         "MaxLevel"  "5"
         "LevelsBetweenUpgrades" "2"
-        "RequiredLevel" "1"
+        "RequiredLevel" "100"
         
         "precache"
         {
@@ -54,7 +54,7 @@
         "AbilityTextureName"    "lycan_summon_wolves_invisibility"
         "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
-        "MaxLevel"  "60"
+        "MaxLevel"  "50"
         "LevelsBetweenUpgrades"  "2"
         "RequiredLevel" "1"
     }

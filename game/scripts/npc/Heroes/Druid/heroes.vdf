@@ -37,14 +37,14 @@
         "AttackRate"        "1.8"
         "ProjectileSpeed"   "900"
 
-        "AttackDamageMin"		"45"     //Average 50
-		"AttackDamageMax"		"55"
+        "AttackDamageMin"       "45"     //Average 50
+        "AttackDamageMax"       "55"
 
         "StatusHealth"      "850"
         "StatusHealthRegen" "1"
         "StatusMana"        "800"
 
-        "ArmorPhysical"		"2"
+        "ArmorPhysical"     "2"
     }
     "teve_druid_3_shapeshifter"
     {
