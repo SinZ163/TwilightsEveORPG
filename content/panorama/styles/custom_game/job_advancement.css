@@ -36,22 +36,27 @@
     z-index: -1;
 }
 #SideBars {
-    visibility: collapse;
     width: 100%;
     height: 46px;
     z-index: -2;
 }
 #SideBarCenter {
     horizontal-align: center;
-    width: 80%;
+    width: 0%;
     height: 100%;
     background-image: url("s2r://panorama/images/hud/reborn/top_bar_team_bg_psd.vtex");
     background-size: 200% 100%;
 
     transition-property: width, transform;
     transition-duration: 0.3s;
+    transition-delay: 0s;
+}
+.Active.InRange #SideBarCenter {
+    width: 80%;
+    transition-delay: 0.2s;
 }
 #SideBarLeft {
+    visibility: collapse;
     horizontal-align: left;
     height: 100%;
     width: 10%;
@@ -60,17 +65,51 @@
 
     margin-left: 2%;
     opacity-mask: url("s2r://panorama/images/masks/topbar_heroslant_left_psd.vtex");
+
+    transform: translateX(43%);
+    transition-property: transform, visibility;
+    transition-duration: 0.3s, 0.6s;
 }
 #SideBarRight {
+    visibility: collapse;
     horizontal-align: right;
     height: 100%;
     width: 10%;
     background-image: url("s2r://panorama/images/hud/reborn/top_bar_team_bg_psd.vtex");
 
-
     margin-right: 2%;
     opacity-mask: url("s2r://panorama/images/masks/topbar_heroslant_right_psd.vtex");
+
+    transform: translateX(-42%);
+
+    transition-property: transform, visibility;
+    transition-duration: 0.3s;
+    transition-delay: 0s, 0.6s;
+}
+.Active.InRange #SideBarLeft,
+.Active.InRange #SideBarRight {
+    visibility: visible;
+    transform: translateX(0px);
+    transition-delay: 0.2s, 0.6s;
 }
 .Active.InRange #SideBars {
     visibility: visible;
+}
+
+#Contents {
+    //visibility: collapse;
+    horizontal-align: center;
+    margin-top: 46px;
+    width: 94%;
+    height: 0%;
+    background-color: rgba(20, 20,20 , 0.9);
+
+    transition-property: height;
+    transition-duration: 0.2s;
+    transition-delay: 0.3s;
+}
+.Active.InRange #Contents {
+    //visibility: visible;
+    height: 74.8%;
+    transition-delay: 0s;
 }
