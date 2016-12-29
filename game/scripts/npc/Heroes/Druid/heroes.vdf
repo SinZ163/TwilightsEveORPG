@@ -12,7 +12,7 @@
         "Ability2"          "teve_druid_archdruid_werewolf"
         "Ability3"          "teve_druid_archdruid_twister"
         "Ability4"          "teve_druid_archdruid_thunderstorm"
-        
+
         //Get fucked talents
         "Ability10"         "teve_attributes" //Replace attribute_bonus with code to replace str/agi/int
         "Ability11"         ""
@@ -30,27 +30,107 @@
         "AttributeAgilityGain"      "2"
         "AttributeBaseIntelligence" "60"
         "AttributeIntelligenceGain" "2.5"
-        
+
         "MovementSpeed"     "330"
-        
+
         "AttackRange"       "500"
         "AttackRate"        "1.8"
         "ProjectileSpeed"   "900"
-        
-        "AttackDamageMin"		"45"
-		"AttackDamageMax"		"55"
-        
+
+        "AttackDamageMin"       "45"     //Average 50
+        "AttackDamageMax"       "55"
+
         "StatusHealth"      "850"
         "StatusHealthRegen" "1"
         "StatusMana"        "800"
-        
-        "ArmorPhysical"		"2"
+
+        "ArmorPhysical"     "2"
     }
     "teve_druid_3_shapeshifter"
     {
+        "override_hero"         "npc_dota_hero_lone_druid"
+
+        "AbilityLayout"         "4"
+        "Ability1"          "teve_druid_shapeshifter_werebear"
+        "Ability2"          "teve_druid_shapeshifter_werewolf"
+        "Ability3"          "teve_druid_shapeshifter_ferocity"
+        "Ability4"          "teve_druid_shapeshifter_lycanthrophy"
+        "Ability5"          ""      //Remove lonedruids "True Form" Ability
+        
+        "Ability10"         "teve_attributes" //Replace attribute_bonus with code to replace str/agi/int
+        "Ability11"         ""
+        "Ability12"         ""
+        "Ability13"         ""
+        "Ability14"         ""
+        "Ability15"         ""
+        "Ability16"         ""
+        "Ability17"         ""
+
+        "AttributePrimary"          "DOTA_ATTRIBUTE_INTELLECT"
+        "AttributeBaseStrength"     "65"
+        "AttributeStrengthGain"     "2"
+        "AttributeBaseAgility"      "65"
+        "AttributeAgilityGain"      "2.5"
+        "AttributeBaseIntelligence" "80"
+        "AttributeIntelligenceGain" "5.5"
+
+        "MovementSpeed"     "350"
+
+        "AttackRange"       "500"
+        "AttackRate"        "1.7"
+        "ProjectileSpeed"   "900"
+
+        "AttackDamageMin"       "205"   //Average 210
+        "AttackDamageMax"       "215"
+
+        "StatusHealth"      "1700"
+        "StatusHealthRegen" "1"
+        "StatusMana"        "1200"
+
+        "ArmorPhysical"     "3"
     }
     "teve_druid_4_runemaster"
     {
+        "override_hero"         "npc_dota_hero_beastmaster"
+
+        "AbilityLayout"         "5"
+        "Ability1"          "teve_druid_runemaster_werebear"
+        "Ability2"          "teve_druid_runemaster_werewolf"
+        "Ability3"          "teve_druid_runemaster_ferocity"
+        "Ability4"          "teve_druid_runemaster_lycanthrophy"
+        "Ability5"          "teve_druid_runemaster_feral_rage"
+        
+        "Ability10"         "teve_attributes" //Replace attribute_bonus with code to replace str/agi/int
+        "Ability11"         ""
+        "Ability12"         ""
+        "Ability13"         ""
+        "Ability14"         ""
+        "Ability15"         ""
+        "Ability16"         ""
+        "Ability17"         ""
+
+        "AttributePrimary"          "DOTA_ATTRIBUTE_INTELLECT"
+        "AttributeBaseStrength"     "80"
+        "AttributeStrengthGain"     "4"
+        "AttributeBaseAgility"      "80"
+        "AttributeAgilityGain"      "3"
+        "AttributeBaseIntelligence" "100"
+        "AttributeIntelligenceGain" "8"
+
+        "MovementSpeed"     "380"
+
+        "AttackRange"       "500"
+        "AttackRate"        "1.6"
+        "ProjectileSpeed"   "900"
+
+        "AttackDamageMin"       "630"       //Average 635
+        "AttackDamageMax"       "640"
+
+        "StatusHealth"      "3500"
+        "StatusHealthRegen" "1"
+        "StatusMana"        "2100"
+
+        "ArmorPhysical"     "5"
     }
     "teve_druid_3_shaman"
     {

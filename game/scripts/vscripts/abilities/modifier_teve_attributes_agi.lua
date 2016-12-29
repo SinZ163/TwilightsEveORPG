@@ -1,21 +1,21 @@
 modifier_teve_attributes_agi = class({})
 
 function modifier_teve_attributes_agi:OnCreated( kv )
-	if IsServer() then
-		self:GetParent():CalculateStatBonus()
-	end
+    if IsServer() then
+        self:GetParent():CalculateStatBonus()
+    end
 end
 function modifier_teve_attributes_agi:OnRefresh( kv )
-	if IsServer() then
-		self:GetParent():CalculateStatBonus()
-	end
+    if IsServer() then
+        self:GetParent():CalculateStatBonus()
+    end
 end
 function modifier_teve_attributes_agi:DeclareFunctions()
-	local funcs = {
-		MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS,
+    local funcs = {
+        MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS,
         MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT 
-	}
-	return funcs
+    }
+    return funcs
 end
 
 function modifier_teve_attributes_agi:GetModifierAttackSpeedBonus_Constant(params)

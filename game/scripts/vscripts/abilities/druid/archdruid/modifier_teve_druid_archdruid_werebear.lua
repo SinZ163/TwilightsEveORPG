@@ -13,22 +13,22 @@ function modifier_teve_druid_archdruid_werebear:OnDestroy(kv)
 end
 
 function modifier_teve_druid_archdruid_werebear:DeclareFunctions()
-	local funcs = {
+    local funcs = {
         MODIFIER_PROPERTY_MODEL_CHANGE,
         MODIFIER_PROPERTY_MOVESPEED_BASE_OVERRIDE,
         MODIFIER_PROPERTY_STATS_STRENGTH_BONUS,
-		MODIFIER_PROPERTY_STATS_AGILITY_BONUS,
+        MODIFIER_PROPERTY_STATS_AGILITY_BONUS,
         MODIFIER_PROPERTY_STATS_INTELLECT_BONUS,
         MODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE,
         MODIFIER_PROPERTY_ATTACK_RANGE_BONUS,
         MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
         MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS
-	}
-	return funcs
+    }
+    return funcs
 end
 
 function modifier_teve_druid_archdruid_werebear:GetModifierModelChange()
-    return "models/heroes/lone_druid/true_form.vmdl"
+    return "models/items/lone_druid/bear/spirit_of_the_atniw/spirit_of_the_atniw.vmdl"
 end
 
 function modifier_teve_druid_archdruid_werebear:GetModifierMoveSpeedOverride(params)

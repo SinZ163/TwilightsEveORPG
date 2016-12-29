@@ -1,11 +1,11 @@
 modifier_teve_novice_frenzy = class({})
 
 function modifier_teve_novice_frenzy:DeclareFunctions()
-	local funcs = {
+    local funcs = {
         MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT,
-		MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE
-	}
-	return funcs
+        MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE
+    }
+    return funcs
 end
 
 function modifier_teve_novice_frenzy:GetEffectName()

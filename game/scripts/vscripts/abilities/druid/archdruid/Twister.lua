@@ -1,7 +1,7 @@
 teve_druid_archdruid_twister = class({})
 
 function teve_druid_archdruid_twister:OnSpellStart()
-    print("twister from Lua!")
+    print("Twister from Lua!")
     self.archdruid_twister_speed = 1000
     self.archdruid_twister_width_initial = 150
     self.archdruid_twister_width_end = 200

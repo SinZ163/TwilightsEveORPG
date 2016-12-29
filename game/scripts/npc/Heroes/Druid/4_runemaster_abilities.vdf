@@ -1,14 +1,75 @@
 "DOTAAbilities"
 {
-    "teve_druid_runemaster_feral_rage"
+    "teve_druid_runemaster_werebear"
     {
         "BaseClass" "ability_lua"
-        "ScriptFile"    "abilities/druid/runemaster/FeralRage.lua"
-        "AbilityCooldown"   "60.0"
-        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+        "ScriptFile"    "abilities/druid/runemaster/Werebear.lua"
+
+        "AbilityTextureName"    "lone_druid_spirit_bear"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+
+        "MaxLevel"  "5"
+        "LevelsBetweenUpgrades" "5"
+        "RequiredLevel" "120"
+
+        "precache"
+        {
+            "model"     "models/heroes/lone_druid/spirit_bear.vmdl"
+        }
+    }
+    "teve_druid_runemaster_werewolf"
+    {
+        "BaseClass" "ability_lua"
+        "ScriptFile"    "abilities/druid/runemaster/Werewolf.lua"
+
+        "AbilityTextureName"    "lycan_shapeshift"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+
+        "MaxLevel"  "5"
+        "LevelsBetweenUpgrades" "5"
+        "RequiredLevel" "100"
+        
+        "precache"
+        {
+            "model"  "models/heroes/lycan/lycan_wolf.vmdl"
+        }
+    }
+    "teve_druid_runemaster_ferocity"
+    {
+        "BaseClass" "ability_lua"
+        "ScriptFile"    "abilities/druid/runemaster/Ferocity.lua"
+
+        "AbilityTextureName"    "alpha_wolf_critical_strike"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+        "MaxLevel"  "40"
+        "LevelsBetweenUpgrades" "2"
+        "RequiredLevel" "2"
+    }
+    "teve_druid_runemaster_lycanthrophy"
+    {
+        "BaseClass" "ability_lua"
+        "ScriptFile"    "abilities/druid/runemaster/Lycanthrophy.lua"
+
+        "AbilityTextureName"    "lycan_summon_wolves_invisibility"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+        "MaxLevel"  "50"
+        "LevelsBetweenUpgrades"  "2"
+        "RequiredLevel" "1"
+    }
+    "teve_druid_runemaster_feral_rage"
+    {
+        "BaseClass"             "ability_lua"
+        "ScriptFile"            "abilities/druid/runemaster/FeralRage.lua"
+        "AbilityTextureName"    "beastmaster_primal_roar"
+        "AbilityType"           "DOTA_ABILITY_TYPE_ULTIMATE" //Make sure this is on R
+        "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+        "AbilityCooldown"       "60.0"
 
         "MaxLevel"  "50"
         "LevelsBetweenUpgrades" "2"
-        "RequiredLevel" "50"
+        "RequiredLevel" "150"
     }
 }

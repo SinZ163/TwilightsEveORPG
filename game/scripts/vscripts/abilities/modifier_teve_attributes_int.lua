@@ -1,22 +1,22 @@
 modifier_teve_attributes_int = class({})
 
 function modifier_teve_attributes_int:OnCreated( kv )
-	if IsServer() then
-		self:GetParent():CalculateStatBonus()
-	end
+    if IsServer() then
+        self:GetParent():CalculateStatBonus()
+    end
 end
 function modifier_teve_attributes_int:OnRefresh( kv )
-	if IsServer() then
-		self:GetParent():CalculateStatBonus()
-	end
+    if IsServer() then
+        self:GetParent():CalculateStatBonus()
+    end
 end
 function modifier_teve_attributes_int:DeclareFunctions()
-	local funcs = {
-		MODIFIER_PROPERTY_MANA_BONUS,
+    local funcs = {
+        MODIFIER_PROPERTY_MANA_BONUS,
         MODIFIER_PROPERTY_MANA_REGEN_PERCENTAGE,
         MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE
-	}
-	return funcs
+    }
+    return funcs
 end
 
 function modifier_teve_attributes_int:GetModifierManaBonus(params)

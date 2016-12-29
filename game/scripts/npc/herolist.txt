@@ -1,7 +1,8 @@
 "CustomHeroList"
 {
-    "npc_dota_hero_furion" "-1"
-    "npc_dota_hero_invoker" "-1"
-    "npc_dota_hero_tinker" "-1"
-    "npc_dota_hero_meepo" "-1"
+    "npc_dota_hero_furion"  "-1"        //Druid - ArchDruid
+    "npc_dota_hero_lone_druid"  "-1"    //Druid - Shapeshifter
+    "npc_dota_hero_beastmaster" "-1"    //Druid - Runemaster
+    "npc_dota_hero_invoker" "-1"        //Initiate - ArchSage
+    "npc_dota_hero_meepo"   "-1"        //Novice
 }
