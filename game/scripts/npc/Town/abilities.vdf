@@ -1,0 +1,12 @@
+"DOTAAbilities"
+{
+    "teve_town_firstjob_aura"
+    {
+        "BaseClass" "ability_lua"
+        "ScriptFile"    "abilities/town/firstjob_aura.lua"
+        
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_AURA"
+        
+        "MaxLevel"  "1"
+    }
+}

@@ -1,0 +1,19 @@
+"DOTAUnits"
+{
+    "teve_town_firstjob"
+    {
+        "BaseClass" "npc_dota_creature"
+        "Model" "npc_dota_creep_badguys_ranged" //TODO: Remove when aura is complete
+        "Level" "1"
+        
+        "AbilityLayout" "2"
+        "Ability1"  "teve_town_firstjob_aura"
+        //"Ability2"  "teve_dummy_passive" //TODO: Implement
+        
+        "AttackCapabilities"    "DOTA_UNIT_CAP_NO_ATTACK"
+        "VisionDaytimeRange"    "0"	
+        "VisionNighttimeRange"  "0"
+        "UnitRelationshipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_WARD"
+        "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_NONE"
+    }
+}

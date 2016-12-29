@@ -1,10 +1,13 @@
-// Dota Heroes File
+// Dota Abilities File
 #base "Heroes/Druid/1_druid_abilities.vdf"
 #base "Heroes/Druid/2_archdruid_abilities.vdf"
 #base "Heroes/Druid/3_shapeshifter_abilities.vdf"
 #base "Heroes/Druid/3_shaman_abilities.vdf"
 #base "Heroes/Druid/4_runemaster_abilities.vdf"
 #base "Heroes/Druid/4_summoner_abilities.vdf"
+
+#base "Town/abilities.vdf"
+
 "DOTAAbilities"
 {
     "Version"       "1"

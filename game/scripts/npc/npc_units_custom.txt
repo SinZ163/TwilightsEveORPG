@@ -1,4 +1,7 @@
 // Units File
+
+#base "Town/units.vdf"
+
 "DOTAUnits"
 {
     "Version"   "1"
