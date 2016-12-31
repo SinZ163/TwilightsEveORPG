@@ -1,3 +1,84 @@
 "DOTAAbilities"
 {
+    "teve_druid_summoner_tornado"
+    {
+        "BaseClass" "ability_lua"
+        "ScriptFile"    "abilities/druid/summoner/Tornado.lua"
+        
+        "AbilityTextureName"    "invoker_tornado"
+        //TODO: use a LINE target
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL"
+        "AbilityCastRange"  "600"
+        "AbilityCastPoint"  "0.1"
+        "AbilityCooldown"   "5.0"
+        
+        "MaxLevel" "30"
+        "LevelsBetweenUpgrades" "2"
+        "RequiredLevel" "1"
+        
+        "precache"
+        {
+            "particle"  "particles/units/heroes/hero_invoker/invoker_tornado.vpcf"
+            "soundfile" "soundevents\game_sounds_heroes\game_sounds_invoker.vsndevts"
+        }
+    }
+    "teve_druid_summoner_regeneration"
+    {
+        "BaseClass" "ability_lua"
+        "ScriptFile"    "abilities/druid/summoner/Regeneration.lua"
+
+        "AbilityTextureName"    "treant_living_armor"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+        "AbilityCastRange"  "600"
+        "AbilityCastPoint"  "0.2"
+        "AbilityCooldown"   "6"
+
+        "MaxLevel"  "30"
+        "LevelsBetweenUpgrades" "2"
+        "RequiredLevel" "8"
+    }
+    "teve_druid_summoner_lightning_storm"
+    {
+        "BaseClass" "ability_lua"
+        "ScriptFile"    "abilities/druid/summoner/LightningStorm.lua"
+
+        "AbilityTextureName"    "razor_eye_of_the_storm"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+        "AbilityCastRange"  "500"
+        "AbilityCastPoint"  "0.15"
+        "AbilityCooldown"   "6"
+
+        "MaxLevel"  "30"
+        "LevelsBetweenUpgrades" "2"
+        "RequiredLevel" "1"
+    }
+    "teve_druid_summoner_arctic_freeze"
+    {
+        "BaseClass" "ability_lua"
+        "ScriptFile"    "abilities/druid/summoner/ArcticFreeze.lua"
+
+        "AbilityTextureName"    "crystal_maiden_crystal_nova"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_AOE"
+        "AbilityCooldown"   "4"
+
+        "MaxLevel"  "30"
+        "LevelsBetweenUpgrades" "2"
+        "RequiredLevel" "6"
+    }
+    "teve_druid_summoner_armageddon"
+    {
+        "BaseClass" "ability_lua"
+        "ScriptFile"    "abilities/druid/summoner/Armageddon.lua"
+
+        "AbilityType"           "DOTA_ABILITY_TYPE_ULTIMATE"
+        "AbilityTextureName"    "invoker_chaos_meteor"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+        "AbilityCastRange"  "300"
+        "AbilityCastPoint"  "0.0"
+        "AbilityCooldown"   "25"
+
+        "MaxLevel"  "30"
+        "LevelsBetweenUpgrades" "2"
+        "RequiredLevel" "60"
+    }
 }

@@ -1,3 +1,64 @@
 "DOTAAbilities"
 {
+    "teve_druid_shaman_lightning_fury"
+    {
+        "BaseClass" "ability_lua"
+        "ScriptFile"    "abilities/druid/shaman/LightningFury.lua"
+
+        "AbilityTextureName"    "leshrac_diabolic_edict"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+        "AbilityCastRange"  "700"
+        "AbilityCastPoint"  "0.1"   
+        "AbilityCooldown"   "4"
+
+        "MaxLevel"  "30"
+        "LevelsBetweenUpgrades" "2"
+        "RequiredLevel" "1"
+    }
+    "teve_druid_shaman_regeneration"
+    {
+        "BaseClass" "ability_lua"
+        "ScriptFile"    "abilities/druid/shaman/Regeneration.lua"
+
+        "AbilityTextureName"    "treant_living_armor"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+        "AbilityCastRange"  "600"
+        "AbilityCastPoint"  "0.4"
+        "AbilityCooldown"   "15"
+
+        "MaxLevel"  "30"
+        "LevelsBetweenUpgrades" "2"
+        "RequiredLevel" "4"
+    }
+    "teve_druid_shaman_entangle"
+    {
+        "BaseClass" "ability_lua"
+        "ScriptFile"    "abilities/druid/shaman/Entangle.lua"
+
+        "AbilityTextureName"    "lone_druid_spirit_bear_entangle"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+        "AbilityCastRange"  "650"
+        "AbilityCastPoint"  "0.1"
+        "AbilityCooldown"   "8"
+
+        "MaxLevel"  "30"
+        "LevelsBetweenUpgrades" "2"
+        "RequiredLevel" "1"
+    }
+    "teve_druid_shaman_lightning_storm"
+    {
+        "BaseClass" "ability_lua"
+        "ScriptFile"    "abilities/druid/shaman/LightningStorm.lua"
+
+        "AbilityType"       "DOTA_ABILITY_TYPE_ULTIMATE"
+        "AbilityTextureName"    "razor_eye_of_the_storm"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+        "AbilityCastRange"  "650"
+        "AbilityCastPoint"  "0.15"
+        "AbilityCooldown"   "12"
+
+        "MaxLevel"  "30"
+        "LevelsBetweenUpgrades" "2"
+        "RequiredLevel" "6"
+    }
 }
