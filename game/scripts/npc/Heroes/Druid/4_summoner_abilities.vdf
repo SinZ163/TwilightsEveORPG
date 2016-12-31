@@ -19,7 +19,7 @@
         "precache"
         {
             "particle"  "particles/units/heroes/hero_invoker/invoker_tornado.vpcf"
-            "soundfile" "soundevents\game_sounds_heroes\game_sounds_invoker.vsndevts"
+            "soundfile" "soundevents/game_sounds_heroes/game_sounds_invoker.vsndevts"
         }
     }
     "teve_druid_summoner_regeneration"

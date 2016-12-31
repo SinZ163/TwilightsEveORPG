@@ -23,5 +23,5 @@ function teve_druid_shaman_regeneration:GetManaCost(level)
         level = self:GetLevel()
     end
 
-    return 50 + (25 * level)        --Is this correct?
+    return 50 + (25 * level)
 end

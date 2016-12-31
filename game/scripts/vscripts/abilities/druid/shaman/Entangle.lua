@@ -28,5 +28,5 @@ function teve_druid_shaman_entangle:GetManaCost(level)
         level = self:GetLevel()
     end
 
-    return 40 + (30 * level)    --Wrong value
+    return 25 + (25 * level)
 end

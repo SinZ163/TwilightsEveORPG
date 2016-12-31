@@ -2,7 +2,7 @@ teve_druid_shaman_lightning_storm = class({})
 LinkLuaModifier( "modifier_teve_druid_shaman_lightning_storm", "abilities/druid/shaman/modifier_teve_druid_shaman_lightning_storm", LUA_MODIFIER_MOTION_NONE )
 
 function teve_druid_shaman_lightning_storm:OnSpellStart()
-    print("Thunderstorm from Lua!")
+    print("Lightning Storm from Lua!")
     local kv = {
         duration = 3.3 --1.3s delay + 2.0s damage time
     }
