@@ -35,7 +35,7 @@
         "BaseClass" "ability_lua"
         "ScriptFile"    "abilities/druid/shaman/Entangle.lua"
 
-        "AbilityTextureName"    "treant_overgrowth"
+        "AbilityTextureName"    "lone_druid_spirit_bear_entangle"
         "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
         "AbilityCastRange"  "650"
         "AbilityCastPoint"  "0.1"
@@ -50,6 +50,7 @@
         "BaseClass" "ability_lua"
         "ScriptFile"    "abilities/druid/shaman/LightningStorm.lua"
 
+        "AbilityType"       "DOTA_ABILITY_TYPE_ULTIMATE"
         "AbilityTextureName"    "razor_eye_of_the_storm"
         "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
         "AbilityCastRange"  "650"

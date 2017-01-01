@@ -134,14 +134,13 @@
     }
     "teve_druid_3_shaman"
     {
-    "override_hero"         "npc_dota_hero_shadow_shaman"
+        "override_hero"         "npc_dota_hero_shadow_shaman"
 
         "AbilityLayout"         "4"
         "Ability1"          "teve_druid_shaman_lightning_fury"
         "Ability2"          "teve_druid_shaman_regeneration"
         "Ability3"          "teve_druid_shaman_entangle"
         "Ability4"          "teve_druid_shaman_lightning_storm"
-        "Ability5"          ""      //Remove lonedruids "True Form" Ability
         
         "Ability10"         "teve_attributes" //Replace attribute_bonus with code to replace str/agi/int
         "Ability11"         ""
@@ -177,5 +176,45 @@
     }
     "teve_druid_4_summoner"
     {
+        "override_hero"         "npc_dota_hero_disruptor"
+
+        "AbilityLayout"         "5"
+        "Ability1"          "teve_druid_summoner_lightning_storm"
+        "Ability2"          "teve_druid_summoner_regeneration"
+        "Ability3"          "teve_druid_summoner_tornado"
+        "Ability4"          "teve_druid_summoner_arctic_freeze"
+        "Ability5"          "teve_druid_summoner_armageddon"
+        
+        "Ability10"         "teve_attributes" //Replace attribute_bonus with code to replace str/agi/int
+        "Ability11"         ""
+        "Ability12"         ""
+        "Ability13"         ""
+        "Ability14"         ""
+        "Ability15"         ""
+        "Ability16"         ""
+        "Ability17"         ""
+
+        "AttributePrimary"          "DOTA_ATTRIBUTE_INTELLECT"
+        "AttributeBaseStrength"     "80"
+        "AttributeStrengthGain"     "2.5"
+        "AttributeBaseAgility"      "80"
+        "AttributeAgilityGain"      "1.5"
+        "AttributeBaseIntelligence" "100"
+        "AttributeIntelligenceGain" "11"
+
+        "MovementSpeed"     "380"
+
+        "AttackRange"       "500"
+        "AttackRate"        "1.6"
+        "ProjectileSpeed"   "900"
+
+        "AttackDamageMin"       "595"   //Average 600
+        "AttackDamageMax"       "605"
+
+        "StatusHealth"      "3000"
+        "StatusHealthRegen" "1"
+        "StatusMana"        "2700"
+
+        "ArmorPhysical"     "4"
     }
 }
