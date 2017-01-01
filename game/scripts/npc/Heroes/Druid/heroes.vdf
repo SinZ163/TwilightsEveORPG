@@ -134,6 +134,46 @@
     }
     "teve_druid_3_shaman"
     {
+    "override_hero"         "npc_dota_hero_shadow_shaman"
+
+        "AbilityLayout"         "4"
+        "Ability1"          "teve_druid_shaman_lightning_fury"
+        "Ability2"          "teve_druid_shaman_regeneration"
+        "Ability3"          "teve_druid_shaman_entangle"
+        "Ability4"          "teve_druid_shaman_lightning_storm"
+        "Ability5"          ""      //Remove lonedruids "True Form" Ability
+        
+        "Ability10"         "teve_attributes" //Replace attribute_bonus with code to replace str/agi/int
+        "Ability11"         ""
+        "Ability12"         ""
+        "Ability13"         ""
+        "Ability14"         ""
+        "Ability15"         ""
+        "Ability16"         ""
+        "Ability17"         ""
+
+        "AttributePrimary"          "DOTA_ATTRIBUTE_INTELLECT"
+        "AttributeBaseStrength"     "65"
+        "AttributeStrengthGain"     "2"
+        "AttributeBaseAgility"      "65"
+        "AttributeAgilityGain"      "2"
+        "AttributeBaseIntelligence" "80"
+        "AttributeIntelligenceGain" "6"
+
+        "MovementSpeed"     "350"
+
+        "AttackRange"       "500"
+        "AttackRate"        "1.7"
+        "ProjectileSpeed"   "900"
+
+        "AttackDamageMin"       "195"   //Average 200
+        "AttackDamageMax"       "205"
+
+        "StatusHealth"      "1700"
+        "StatusHealthRegen" "1"
+        "StatusMana"        "1200"
+
+        "ArmorPhysical"     "3"
     }
     "teve_druid_4_summoner"
     {
