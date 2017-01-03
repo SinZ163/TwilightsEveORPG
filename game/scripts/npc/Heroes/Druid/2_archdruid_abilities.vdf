@@ -71,5 +71,11 @@
         "MaxLevel" "60"
         "LevelsBetweenUpgrades" "2"
         "RequiredLevel" "4"
+
+        "precache"
+        {
+            "particle"  "particles/hero/druid/archdruid/archdruid_thunderstorm.vpcf"
+            "particle"  "particles/hero/druid/archdruid/archdruidcloudblack.vpcf"
+        }
     }
 }
