@@ -1,3 +1,61 @@
 "DOTAAbilities"
 {
+    "teve_druid_druid_disabling_roots"
+    {
+        "BaseClass" "ability_lua"
+        "ScriptFile"    "abilities/druid/druid/DisablingRoots.lua"
+        
+        "AbilityTextureName"    "lone_druid_spirit_bear_entangle"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+        "AbilityCastRange"  "600"
+        "AbilityCastPoint"  "0.3"
+        "AbilityCooldown"   "10.0"
+        
+        "MaxLevel" "10"
+        "LevelsBetweenUpgrades" "2"
+        "RequiredLevel" "2"
+    }
+    "teve_druid_druid_rejuvenation"
+    {
+        "BaseClass" "ability_lua"
+        "ScriptFile"    "abilities/druid/druid/Rejuvenation.lua"
+        
+        "AbilityTextureName"    "huskar_inner_vitality"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+        "AbilityCastRange"  "700"
+        "AbilityCastPoint"  "0.5"
+        "AbilityCooldown"   "12.0"
+        
+        "MaxLevel" "10"
+        "LevelsBetweenUpgrades" "2"
+        "RequiredLevel" "3"
+    }
+    "teve_druid_druid_thorns_aura"
+    {
+        "BaseClass" "ability_lua"
+        "ScriptFile"    "abilities/druid/druid/ThornsAura.lua"
+        
+        "AbilityTextureName"    "nyx_assassin_spiked_carapace"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_AURA"
+        
+        "MaxLevel" "10"
+        "LevelsBetweenUpgrades" "2"
+        "RequiredLevel" "1"
+    }
+    "teve_druid_druid_fire_storm"
+    {
+        "BaseClass" "ability_lua"
+        "ScriptFile"    "abilities/druid/druid/FireStorm.lua"
+        
+        "AbilityType" "DOTA_ABILITY_TYPE_ULTIMATE" //Make sure this is on R
+        "AbilityTextureName"    "doom_bringer_scorched_earth"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+        "AbilityCastRange"  "600"
+        "AbilityCastPoint"  "0.6"
+        "AbilityCooldown"   "8.0"
+        
+        "MaxLevel" "10"
+        "LevelsBetweenUpgrades" "2"
+        "RequiredLevel" "1"
+    }
 }

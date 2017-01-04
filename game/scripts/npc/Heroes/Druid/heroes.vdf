@@ -2,6 +2,46 @@
 {
     "teve_druid_1"
     {
+        "override_hero"         "npc_dota_hero_enchantress"
+
+        "AbilityLayout"         "4"
+        "Ability1"          "teve_druid_druid_disabling_roots"
+        "Ability2"          "teve_druid_druid_rejuvenation"
+        "Ability3"          "teve_druid_druid_thorns_aura"
+        "Ability4"          "teve_druid_druid_fire_storm"
+
+        //Get fucked talents
+        "Ability10"         "teve_attributes" //Replace attribute_bonus with code to replace str/agi/int
+        "Ability11"         ""
+        "Ability12"         ""
+        "Ability13"         ""
+        "Ability14"         ""
+        "Ability15"         ""
+        "Ability16"         ""
+        "Ability17"         ""
+
+        "AttributePrimary"          "DOTA_ATTRIBUTE_INTELLECT"
+        "AttributeBaseStrength"     "15"
+        "AttributeStrengthGain"     "1.5"
+        "AttributeBaseAgility"      "14"
+        "AttributeAgilityGain"      "1.25"
+        "AttributeBaseIntelligence" "17"
+        "AttributeIntelligenceGain" "1.75"
+
+        "MovementSpeed"     "320"
+
+        "AttackRange"       "500"
+        "AttackRate"        "2"
+        "ProjectileSpeed"   "900"
+
+        "AttackDamageMin"       "15"     //Average 20
+        "AttackDamageMax"       "25"
+
+        "StatusHealth"      "250"
+        "StatusHealthRegen" "1"
+        "StatusMana"        "200"
+
+        "ArmorPhysical"     "1"
     }
     "teve_druid_2" 
     {
