@@ -8,7 +8,7 @@ function modifier_teve_druid_druid_thorns_aura_buff:DeclareFunctions()
 end
 
 function modifier_teve_druid_druid_thorns_aura_buff:OnAttackLanded(params)
-    if params["target"] == self:GetParent() and params["damage_type"] == DAMAGE_TYPE_PHYSICAL then
+    if params["target"] == self:GetParent() and params["damage_type"] == DAMAGE_TYPE_PHYSICAL and not params["attacker"]:IsRangedAttacker() then
         -- for k,v in pairs(params) do
         --     print(k, v)
         -- end
