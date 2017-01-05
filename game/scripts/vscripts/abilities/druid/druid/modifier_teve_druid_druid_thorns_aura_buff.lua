@@ -9,9 +9,6 @@ end
 
 function modifier_teve_druid_druid_thorns_aura_buff:OnAttackLanded(params)
     if params["target"] == self:GetParent() and params["damage_type"] == DAMAGE_TYPE_PHYSICAL and not params["attacker"]:IsRangedAttacker() then
-        -- for k,v in pairs(params) do
-        --     print(k, v)
-        -- end
         -- get damage done
         self.target_armour = params["target"]:GetPhysicalArmorValue()
         self.armour_constant = 0.06        --constant is 0.06 in dota but 0.01 in teve. change value to 0.01 once teve armour is implemented
@@ -22,7 +19,7 @@ function modifier_teve_druid_druid_thorns_aura_buff:OnAttackLanded(params)
         self.return_damage = self.return_pct * self.total_damage
         
         local damage = {
-            attacker = self:GetCaster(),
+            attacker = params["target"],
             victim = params["attacker"],
             damage = self.return_damage,
             damage_type = DAMAGE_TYPE_PHYSICAL,
