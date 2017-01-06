@@ -5,7 +5,7 @@
         "BaseClass" "ability_lua"
         "ScriptFile"    "abilities/druid/shaman/LightningFury.lua"
 
-        "AbilityTextureName"    "leshrac_diabolic_edict"
+        "AbilityTextureName"    "zuus_arc_lightning"
         "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
         "AbilityCastRange"  "700"
         "AbilityCastPoint"  "0.1"
