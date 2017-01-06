@@ -1,4 +1,7 @@
 -- TODO: Move to some util file
+
+require("libs/timers")
+
 function PrintTable(t, indent, done)
     --print ( string.format ('PrintTable type %s', type(keys)) )
     if type(t) ~= "table" then return end
@@ -57,6 +60,7 @@ function Activate()
     GameRules.TwilightsEveORPG = TwilightsEveORPG()
     GameRules.TwilightsEveORPG:InitGameMode()
 end
+
 function TwilightsEveORPG:InitGameMode()
     local levels = {}
     for i = 1, 300 do
@@ -66,8 +70,8 @@ function TwilightsEveORPG:InitGameMode()
     GameRules:GetGameModeEntity():SetUseCustomHeroLevels(true)
     ListenToGameEvent("npc_spawned", Dynamic_Wrap(TwilightsEveORPG, "OnNPCSpawned"), self)
     ListenToGameEvent("dota_player_gained_level", Dynamic_Wrap(TwilightsEveORPG, "OnPlayerGainedLevel"), self)
-        
 end
+
 function TwilightsEveORPG:OnNPCSpawned(keys)
     local npc = EntIndexToHScript(keys.entindex)
 
@@ -81,6 +85,7 @@ function TwilightsEveORPG:OnNPCSpawned(keys)
         npc:SwapItems(DOTA_ITEM_SLOT_3, DOTA_ITEM_SLOT_9)
     end
 end
+
 function TwilightsEveORPG:OnPlayerGainedLevel( event )
     local player = EntIndexToHScript( event.player )
     local hero = player:GetAssignedHero()
