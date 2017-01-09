@@ -24,6 +24,12 @@ function teve_druid_summoner_armageddon:OnSpellStart()
             end
         end
     end
+    self.aoe = self:GetAOERadius()
+    self.target = self:GetCursorPosition()
+    local nFXIndex = ParticleManager:CreateParticle( "particles/hero/druid/summoner/summoner_armageddon.vpcf", PATTACH_CUSTOMORIGIN, nil)
+    ParticleManager:SetParticleControl( nFXIndex, 0, self.target )
+    ParticleManager:SetParticleControl( nFXIndex, 4, Vector(self.aoe, 1, 1) )
+    ParticleManager:ReleaseParticleIndex( nFXIndex )
 end
 
 function teve_druid_summoner_armageddon:GetAOERadius()

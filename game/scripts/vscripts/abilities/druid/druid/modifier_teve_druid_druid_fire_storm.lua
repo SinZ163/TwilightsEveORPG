@@ -31,6 +31,13 @@ function modifier_teve_druid_druid_fire_storm:OnIntervalThink()
                     end
                 end 
             end
+
+        local aoe = self:GetAbility():GetAOERadius()
+        local target = self:GetParent():GetAbsOrigin()
+        local nFXIndex = ParticleManager:CreateParticle( "particles/hero/druid/druid/druid_fire_storm.vpcf", PATTACH_CUSTOMORIGIN, nil)
+        ParticleManager:SetParticleControl( nFXIndex, 0, target )
+        ParticleManager:SetParticleControl( nFXIndex, 4, Vector(aoe, 1, 1) )
+        ParticleManager:ReleaseParticleIndex( nFXIndex )
         end
 
         self.iter = self.iter + 1

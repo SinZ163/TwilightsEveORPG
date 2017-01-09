@@ -2,6 +2,13 @@ modifier_teve_druid_runemaster_feral_rage = class ({})
 
 function modifier_teve_druid_runemaster_feral_rage:OnCreated( kv )
     self.feral_rage_damage = 500 * self:GetAbility():GetLevel()
+
+    local hTarget = self:GetParent():GetAbsOrigin()
+    local nFXIndex = ParticleManager:CreateParticle( "particles/hero/druid/runemaster/runemasterferalrage.vpcf", PATTACH_ABSORIGIN_FOLLOW, self:GetParent() )
+    ParticleManager:SetParticleControl( nFXIndex, 0, hTarget)
+    ParticleManager:SetParticleControlEnt( nFXIndex, 1, self:GetParent(), PATTACH_POINT_FOLLOW, "attach_weapon", hTarget, true)
+
+    self:AddParticle( nFXIndex, false, false, -1, false, false)
 end    
 
 function modifier_teve_druid_runemaster_feral_rage:OnRefresh ( kv )

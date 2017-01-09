@@ -36,6 +36,11 @@
         "MaxLevel"  "30"
         "LevelsBetweenUpgrades" "2"
         "RequiredLevel" "8"
+
+        "precache"
+        {
+            "particle"  "particles/hero/druid/summoner/summoner_regeneration.vpcf"
+        }
     }
     "teve_druid_summoner_lightning_storm"
     {
@@ -51,6 +56,11 @@
         "MaxLevel"  "30"
         "LevelsBetweenUpgrades" "2"
         "RequiredLevel" "1"
+
+        "precache"
+        {
+            "particle"  "particles/hero/druid/summoner/summoner_lightning_storm.vpcf"
+        }
     }
     "teve_druid_summoner_arctic_freeze"
     {
@@ -64,6 +74,11 @@
         "MaxLevel"  "30"
         "LevelsBetweenUpgrades" "2"
         "RequiredLevel" "6"
+
+        "precache"
+        {
+            "particle"  "particles/units/heroes/hero_crystalmaiden/maiden_frostbite_buff.vpcf"
+        }
     }
     "teve_druid_summoner_armageddon"
     {
@@ -80,5 +95,11 @@
         "MaxLevel"  "30"
         "LevelsBetweenUpgrades" "2"
         "RequiredLevel" "60"
+
+        "precache"
+        {
+            "particle"  "particles/hero/druid/summoner/summoner_armageddon.vpcf"
+            "particle"	"particles/econ/courier/courier_onibi/courier_onibi_green_ambient_b.vpcf"
+        }
     }
 }

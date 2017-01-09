@@ -11,3 +11,7 @@ function modifier_teve_druid_druid_rejuvenation:GetModifierConstantHealthRegen (
     --100 total health / 15 seconds
     return (100 / 15) * self:GetAbility():GetLevel()
 end
+
+function modifier_teve_druid_druid_rejuvenation:GetEffectName()
+    return "particles/items_fx/healing_tango.vpcf"
+end

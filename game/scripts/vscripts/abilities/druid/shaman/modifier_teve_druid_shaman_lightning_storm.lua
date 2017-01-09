@@ -7,6 +7,11 @@ function modifier_teve_druid_shaman_lightning_storm:OnCreated( kv )
 
     if IsServer() then
         self:StartIntervalThink( self.tick_rate )
+
+        local nFXIndex = ParticleManager:CreateParticle( "particles/hero/druid/shaman/shamancloudblack.vpcf", PATTACH_WORLDORIGIN, self:GetCaster() )
+        ParticleManager:SetParticleControl( nFXIndex, 0, self:GetParent():GetOrigin() )
+        ParticleManager:SetParticleControl( nFXIndex, 1, self:GetParent():GetOrigin() + Vector(0, 0, 600)  )
+        ParticleManager:ReleaseParticleIndex( nFXIndex )
     end
 end
 
@@ -32,9 +37,15 @@ function modifier_teve_druid_shaman_lightning_storm:OnIntervalThink()
                     end
                 end 
             end
+
+            for x=1,10 do
+                local nFXIndex = ParticleManager:CreateParticle( "particles/hero/druid/shaman/shamanthundergods_wrath_start_bolt_child.vpcf", PATTACH_CUSTOMORIGIN, self:GetCaster() )
+                ParticleManager:SetParticleControl( nFXIndex, 0, self:GetParent():GetOrigin() + Vector(0, 0, 550) )
+                ParticleManager:SetParticleControl( nFXIndex, 1, self:GetParent():GetOrigin() + RandomVector( 350 ) )
+                ParticleManager:ReleaseParticleIndex( nFXIndex )
+            end
         end
 
         self.iter = self.iter + 1
-        --local nFXIndex = I'll do this later
     end
 end

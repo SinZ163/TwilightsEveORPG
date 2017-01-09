@@ -36,7 +36,6 @@
 		},
 		{
 			_class = "C_OP_InterpolateRadius"
-			m_flEndScale = 5.0
 		},
 		{
 			_class = "C_OP_DampenToCP"

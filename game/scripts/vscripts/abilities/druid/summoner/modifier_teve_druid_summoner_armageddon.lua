@@ -22,3 +22,7 @@ function modifier_teve_druid_summoner_armageddon:OnIntervalThink()
         ApplyDamage( damage )
     end
 end
+
+function modifier_teve_druid_summoner_armageddon:GetEffectName()
+    return "particles/econ/courier/courier_onibi/courier_onibi_green_ambient_b.vpcf"
+end
