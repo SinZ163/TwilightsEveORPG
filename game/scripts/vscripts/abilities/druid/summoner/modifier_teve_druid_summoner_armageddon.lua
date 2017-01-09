@@ -1,7 +1,7 @@
 modifier_teve_druid_summoner_armageddon = class({})
 
 function modifier_teve_druid_summoner_armageddon:OnCreated( kv )
-    self.armageddon_damage = (500 * self:GetAbility():GetLevel()) / 2  --divided by 2 because tick_rate is 0.5
+    self.armageddon_damage = (5000 * self:GetAbility():GetLevel()) / 2  --divided by 2 because tick_rate is 0.5
     self.tick_rate = 0.5
 
     if IsServer() then
