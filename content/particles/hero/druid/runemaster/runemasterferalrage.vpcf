@@ -92,18 +92,28 @@
 	[
 		{
 			m_ChildRef = resource:"particles/hero/druid/runemaster/runemasterferalrage_e.vpcf"
+			m_flDelay = 0.5
+			m_bDisableChild = true
 		},
 		{
 			m_ChildRef = resource:"particles/hero/druid/runemaster/runemasterferalrage_b.vpcf"
+			m_flDelay = 0.5
+			m_bDisableChild = true
 		},
 		{
 			m_ChildRef = resource:"particles/hero/druid/runemaster/runemasterferalrage_c.vpcf"
+			m_flDelay = 0.5
+			m_bDisableChild = true
 		},
 		{
 			m_ChildRef = resource:"particles/hero/druid/runemaster/runemasterferalrage_d.vpcf"
+			m_flDelay = 0.5
+			m_bDisableChild = true
 		},
 		{
 			m_ChildRef = resource:"particles/hero/druid/runemaster/runemasterferalrage_f.vpcf"
+			m_flDelay = 0.5
+			m_bDisableChild = true
 		},
 	]
 }

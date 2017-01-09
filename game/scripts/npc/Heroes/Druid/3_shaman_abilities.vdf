@@ -14,6 +14,11 @@
         "MaxLevel"  "30"
         "LevelsBetweenUpgrades" "2"
         "RequiredLevel" "1"
+
+        "precache"
+        {
+            "particle"  "particles/items_fx/chain_lightning.vpcf"
+        }
     }
     "teve_druid_shaman_regeneration"
     {

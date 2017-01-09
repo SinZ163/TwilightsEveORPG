@@ -10,8 +10,18 @@ function teve_druid_shaman_lightning_fury:OnSpellStart()
     local bounce_aoe = 500
     local bounce_delay = 0.2
     self.damage = 130 * self:GetLevel()
+    self.caster = self:GetCaster()
 
-    local next_target_position = self:LightningBounce(hTarget)
+    -- PARTICLE STUFF
+
+    -- local attack_attack1 = self.caster:ScriptLookupAttachment("attach_attack1")
+    -- local start_position = self.caster:GetAttachmentOrigin(attach_attack1)
+    local start_position = self.caster:GetAbsOrigin()
+    start_position.z = start_position.z + hTarget:GetBoundingMaxs().z
+
+    -- END PARTICLE STUFF
+
+    local next_target_position = self:LightningBounce(hTarget, start_position)
 
     local hit_targets = {}
     hit_targets[hTarget:GetEntityIndex()] = true
@@ -31,7 +41,7 @@ function teve_druid_shaman_lightning_fury:OnSpellStart()
             end
 
             if bounce_target then
-                next_target_position = self:LightningBounce(bounce_target)
+                next_target_position = self:LightningBounce(bounce_target, next_target_position)
                 
                 bounces = bounces - 1
                 if bounces > 0 then
@@ -64,8 +74,17 @@ function teve_druid_shaman_lightning_fury:GetManaCost(level)
     return 50 + (30 * level)
 end
 
-function teve_druid_shaman_lightning_fury:LightningBounce(target)
-    local target_position = target:GetAbsOrigin()
+function teve_druid_shaman_lightning_fury:LightningBounce(target, start_position)
+    -- PARTICLE STUFF
+
+    local attach_hitloc = target:ScriptLookupAttachment("attach_hitloc")
+    local target_position = target:GetAttachmentOrigin(attach_hitloc)
+    local particle = ParticleManager:CreateParticle("particles/items_fx/chain_lightning.vpcf", PATTACH_CUSTOMORIGIN, self.caster)
+    ParticleManager:SetParticleControl(particle, 0, start_position)
+    ParticleManager:SetParticleControl(particle, 1, target_position)
+
+    -- END PARTICLE STUFF
+
     damage_table = {
         victim = target,
         attacker = self:GetCaster(),
