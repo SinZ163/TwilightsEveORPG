@@ -4,7 +4,7 @@ function modifier_teve_druid_archdruid_thunderstorm_thinker:OnCreated( kv )
     self.thunderstorm_damage = 20 * self:GetAbility():GetLevel()
     self.tick_rate = 0.1
     self.iter = 0
-
+    
     if IsServer() then
         self:StartIntervalThink( self.tick_rate )
 

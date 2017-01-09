@@ -1,11 +1,15 @@
 modifier_teve_druid_summoner_armageddon = class({})
 
 function modifier_teve_druid_summoner_armageddon:OnCreated( kv )
-    self.armageddon_damage = (5000 * self:GetAbility():GetLevel()) / 2  --divided by 2 because tick_rate is 0.5
+    self.armageddon_damage = (500 * self:GetAbility():GetLevel()) / 2  --divided by 2 because tick_rate is 0.5
     self.tick_rate = 0.5
 
     if IsServer() then
         self:StartIntervalThink( self.tick_rate )
+        local hTarget = self:GetParent():GetAbsOrigin()
+        local nFXIndex = ParticleManager:CreateParticle("particles/hero/druid/summoner/summoner_armageddon_burnfire.vpcf", PATTACH_POINT_FOLLOW, self:GetParent() )
+        ParticleManager:SetParticleControlEnt(nFXIndex, 0, self:GetParent(), PATTACH_POINT_FOLLOW, "attach_hitloc", hTarget, true)
+        self:AddParticle( nFXIndex, false, false, -1, false, false)
     end
 end
 
@@ -21,8 +25,4 @@ function modifier_teve_druid_summoner_armageddon:OnIntervalThink()
 
         ApplyDamage( damage )
     end
-end
-
-function modifier_teve_druid_summoner_armageddon:GetEffectName()
-    return "particles/econ/courier/courier_onibi/courier_onibi_green_ambient_b.vpcf"
 end

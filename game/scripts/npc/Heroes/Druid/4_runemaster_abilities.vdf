@@ -75,6 +75,7 @@
         "precache"
         {
             "particle"  "particles/hero/druid/runemaster/runemasterferalrage.vpcf"
+            "particle"  "particles/items2_fx/mask_of_madness.vpcf"
         }
     }
 }
