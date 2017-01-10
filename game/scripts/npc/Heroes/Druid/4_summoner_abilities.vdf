@@ -78,6 +78,7 @@
         "precache"
         {
             "particle"  "particles/units/heroes/hero_crystalmaiden/maiden_frostbite_buff.vpcf"
+            "particle"  "particles/hero/druid/summoner/summoner_arctic_freeze.vpcf"
         }
     }
     "teve_druid_summoner_armageddon"
