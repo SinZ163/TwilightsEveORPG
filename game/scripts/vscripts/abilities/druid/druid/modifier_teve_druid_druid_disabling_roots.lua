@@ -12,6 +12,9 @@ function modifier_teve_druid_druid_disabling_roots:OnCreated()
         local nFXIndex = ParticleManager:CreateParticle( "particles/hero/druid/druid/druid_disabling_roots.vpcf", PATTACH_ABSORIGIN, self:GetParent() )
         ParticleManager:SetParticleControlEnt( nFXIndex, 0, self:GetParent(), PATTACH_ABSORIGIN, "attach_origin", hTarget, true)
         ParticleManager:SetParticleControlEnt( nFXIndex, 1, self:GetParent(), PATTACH_ABSORIGIN, "attach_origin", hTarget, true)
+
+
+        EmitSoundOn( "Hero_Treant.Overgrowth.Target", self:GetParent() )
     end
 end
 

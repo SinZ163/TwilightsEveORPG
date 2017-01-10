@@ -15,6 +15,7 @@
         "precache"
         {
             "model"     "models/heroes/lone_druid/spirit_bear.vmdl"
+            "soundfile" "soundevents/game_sounds_heroes/game_sounds_lone_druid.vsndevts"
         }
     }
     "teve_druid_runemaster_werewolf"
@@ -32,6 +33,7 @@
         "precache"
         {
             "model"  "models/heroes/lycan/lycan_wolf.vmdl"
+            "soundfile" "soundevents/game_sounds_heroes/game_sounds_lycan.vsndevts"
         }
     }
     "teve_druid_runemaster_ferocity"
@@ -76,6 +78,9 @@
         {
             "particle"  "particles/hero/druid/runemaster/runemasterferalrage.vpcf"
             "particle"  "particles/items2_fx/mask_of_madness.vpcf"
+            "soundfile" "soundevents/game_sounds_heroes/game_sounds_lone_druid.vsndevts"
+            "soundfile" "soundevents/game_sounds_heroes/game_sounds_lycan.vsndevts"
+            "soundfile" "soundevents/game_sounds_heroes/game_sounds_beastmaster.vsndevts"
         }
     }
 }

@@ -9,6 +9,11 @@ function teve_druid_druid_fire_storm:OnSpellStart()
     CreateModifierThinker( self:GetCaster(), self, "modifier_teve_druid_druid_fire_storm", kv, self:GetCursorPosition(), self:GetCaster():GetTeamNumber(), false )
 end
 
+function teve_druid_druid_fire_storm:OnAbilityPhaseStart()
+    EmitSoundOn("Hero_AbyssalUnderlord.Firestorm.Cast", self:GetCaster())
+    return true
+end
+
 function teve_druid_druid_fire_storm:GetAOERadius()
     return 350
 end

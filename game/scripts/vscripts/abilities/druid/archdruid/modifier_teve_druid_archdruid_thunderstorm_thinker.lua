@@ -37,10 +37,11 @@ function modifier_teve_druid_archdruid_thunderstorm_thinker:OnIntervalThink()
                     end
                 end 
             end
-            local nFXIndex = ParticleManager:CreateParticle( "particles/hero/druid/archdruid/archdruid_thunderstorm.vpcf", PATTACH_WORLDORIGIN, self:GetCaster() )
-            ParticleManager:SetParticleControl( nFXIndex, 0, self:GetParent():GetOrigin() )
-            ParticleManager:SetParticleControl( nFXIndex, 1, self:GetParent():GetOrigin() + Vector(0, 0, 550)  )
-            ParticleManager:ReleaseParticleIndex( nFXIndex )
+        local nFXIndex = ParticleManager:CreateParticle( "particles/hero/druid/archdruid/archdruid_thunderstorm.vpcf", PATTACH_WORLDORIGIN, self:GetCaster() )
+        ParticleManager:SetParticleControl( nFXIndex, 0, self:GetParent():GetOrigin() )
+        ParticleManager:SetParticleControl( nFXIndex, 1, self:GetParent():GetOrigin() + Vector(0, 0, 550)  )
+        ParticleManager:ReleaseParticleIndex( nFXIndex )
+        EmitSoundOnLocationWithCaster(self:GetAbility():GetCursorPosition(), "Hero_razor.lightning", self:GetCaster())
         end
 
         self.iter = self.iter + 1

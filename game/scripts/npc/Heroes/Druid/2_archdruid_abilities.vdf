@@ -15,6 +15,7 @@
         "precache"
         {
             "model"  "models/items/lone_druid/bear/spirit_of_the_atniw/spirit_of_the_atniw.vmdl"
+            "soundfile" "soundevents/game_sounds_heroes/game_sounds_lone_druid.vsndevts"
         }
     }
     "teve_druid_archdruid_werewolf"
@@ -32,6 +33,7 @@
         "precache"
         {
             "model"  "models/items/beastmaster/boar/fotw_wolf/fotw_wolf.vmdl"
+            "soundfile" "soundevents/game_sounds_heroes/game_sounds_lycan.vsndevts"
         }
     }
     "teve_druid_archdruid_twister"
@@ -76,6 +78,7 @@
         {
             "particle"  "particles/hero/druid/archdruid/archdruid_thunderstorm.vpcf"
             "particle"  "particles/hero/druid/archdruid/archdruidcloudblack.vpcf"
+            "soundfile" "soundevents/game_sounds_heroes/game_sounds_razor.vsndevts"
         }
     }
 }
