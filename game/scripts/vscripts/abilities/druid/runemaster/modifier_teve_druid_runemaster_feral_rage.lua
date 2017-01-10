@@ -2,6 +2,12 @@ modifier_teve_druid_runemaster_feral_rage = class ({})
 
 function modifier_teve_druid_runemaster_feral_rage:OnCreated( kv )
     self.feral_rage_damage = 500 * self:GetAbility():GetLevel()
+
+    local hTarget = self:GetParent():GetAbsOrigin()
+    local nFXIndex = ParticleManager:CreateParticle( "particles/hero/druid/runemaster/runemasterferalrage.vpcf", PATTACH_ABSORIGIN_FOLLOW, self:GetParent() )
+    ParticleManager:SetParticleControl( nFXIndex, 0, hTarget)
+
+    self:AddParticle( nFXIndex, false, false, -1, false, false)
 end    
 
 function modifier_teve_druid_runemaster_feral_rage:OnRefresh ( kv )
@@ -40,4 +46,11 @@ function modifier_teve_druid_runemaster_feral_rage:OnAttackLanded(params)
         self:GetCaster():Heal(self.heal_amount, self:GetCaster())
         SendOverheadEventMessage(self:GetCaster(), OVERHEAD_ALERT_HEAL, self:GetCaster(), math.floor(self.heal_amount), nil)
     end
+end
+
+function modifier_teve_druid_runemaster_feral_rage:GetEffectName()
+    return "particles/items2_fx/mask_of_madness.vpcf"
+end
+function modifier_teve_druid_runemaster_feral_rage:GetEffectAttachType()
+    return "follow_hitloc"
 end

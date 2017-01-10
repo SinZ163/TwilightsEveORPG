@@ -14,6 +14,11 @@
         "MaxLevel"  "30"
         "LevelsBetweenUpgrades" "2"
         "RequiredLevel" "1"
+
+        "precache"
+        {
+            "particle"  "particles/items_fx/chain_lightning.vpcf"
+        }
     }
     "teve_druid_shaman_regeneration"
     {
@@ -29,6 +34,11 @@
         "MaxLevel"  "30"
         "LevelsBetweenUpgrades" "2"
         "RequiredLevel" "4"
+
+        "precache"
+        {
+            "particle"  "particles/hero/druid/shaman/shamanregeneration.vpcf"
+        }
     }
     "teve_druid_shaman_entangle"
     {
@@ -44,6 +54,11 @@
         "MaxLevel"  "30"
         "LevelsBetweenUpgrades" "2"
         "RequiredLevel" "1"
+
+        "precache"
+        {
+            "particle"  "particles/hero/druid/shaman/shamanentanglevines.vpcf"
+        }
     }
     "teve_druid_shaman_lightning_storm"
     {
@@ -60,5 +75,10 @@
         "MaxLevel"  "30"
         "LevelsBetweenUpgrades" "2"
         "RequiredLevel" "6"
+
+        "precache"
+        {
+            "particle"  "particles/hero/druid/shaman/shamanthundergods_wrath_start_bolt_child.vpcf"
+        }
     }
 }

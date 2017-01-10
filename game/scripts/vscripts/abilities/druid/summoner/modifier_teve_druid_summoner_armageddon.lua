@@ -6,6 +6,10 @@ function modifier_teve_druid_summoner_armageddon:OnCreated( kv )
 
     if IsServer() then
         self:StartIntervalThink( self.tick_rate )
+        local hTarget = self:GetParent():GetAbsOrigin()
+        local nFXIndex = ParticleManager:CreateParticle("particles/hero/druid/summoner/summoner_armageddon_burnfire.vpcf", PATTACH_POINT_FOLLOW, self:GetParent() )
+        ParticleManager:SetParticleControlEnt(nFXIndex, 0, self:GetParent(), PATTACH_POINT_FOLLOW, "attach_hitloc", hTarget, true)
+        self:AddParticle( nFXIndex, false, false, -1, false, false)
     end
 end
 

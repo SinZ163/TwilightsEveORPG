@@ -14,6 +14,11 @@
         "MaxLevel" "10"
         "LevelsBetweenUpgrades" "2"
         "RequiredLevel" "2"
+
+        "precache"
+        {
+            "particle"  "particles/hero/druid/druid/druid_disabling_roots.vpcf"
+        }
     }
     "teve_druid_druid_rejuvenation"
     {
@@ -29,6 +34,11 @@
         "MaxLevel" "10"
         "LevelsBetweenUpgrades" "2"
         "RequiredLevel" "3"
+
+        "precache"
+        {
+            "particle"  "particles/items_fx/healing_tango.vpcf"
+        }
     }
     "teve_druid_druid_thorns_aura"
     {
@@ -57,5 +67,10 @@
         "MaxLevel" "10"
         "LevelsBetweenUpgrades" "2"
         "RequiredLevel" "1"
+
+        "precache"
+        {
+            "particle"  "particles/hero/druid/druid/druid_fire_storm.vpcf"
+        }
     }
 }

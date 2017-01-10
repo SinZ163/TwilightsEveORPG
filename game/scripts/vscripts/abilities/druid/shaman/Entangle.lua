@@ -5,7 +5,6 @@ function teve_druid_shaman_entangle:OnSpellStart()
     print("Entangle from Lua!")
 
     local hTarget = self:GetCursorTarget()
-
     hTarget:AddNewModifier( self:GetCaster(), self, "modifier_teve_druid_shaman_entangle", { duration = 3 } )
 end
 

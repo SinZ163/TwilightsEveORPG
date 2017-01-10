@@ -44,9 +44,7 @@
 		{
 			m_flDelay = 0.35
 			m_ChildRef = resource:"particles/hero/druid/archdruid/archdruid_thunderstorm_a4.vpcf"
-		},
-		{
-			m_ChildRef = resource:"particles/hero/druid/archdruid/archdruidcloudblack.vpcf"
+			m_bDisableChild = true
 		},
 	]
 }
