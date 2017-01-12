@@ -76,7 +76,6 @@ end
 
 function teve_druid_shaman_lightning_fury:LightningBounce(target, start_position)
     -- PARTICLE STUFF
-    local hTarget = self:GetCursorTarget()
     local attach_hitloc = target:ScriptLookupAttachment("attach_hitloc")
     local target_position = target:GetAttachmentOrigin(attach_hitloc)
     local particle = ParticleManager:CreateParticle("particles/items_fx/chain_lightning.vpcf", PATTACH_CUSTOMORIGIN, self.caster)
