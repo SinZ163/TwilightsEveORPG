@@ -6,7 +6,6 @@ function modifier_teve_druid_shaman_lightning_storm:OnCreated( kv )
     self.iter = 0
     if IsServer() then
         self:StartIntervalThink( self.tick_rate )
-        local vTarget = self:GetParent():GetOrigin()
         local nFXIndex = ParticleManager:CreateParticle( "particles/hero/druid/shaman/shamancloudblack.vpcf", PATTACH_WORLDORIGIN, self:GetCaster() )
         ParticleManager:SetParticleControl( nFXIndex, 0, self:GetParent():GetOrigin() )
         ParticleManager:SetParticleControl( nFXIndex, 1, self:GetParent():GetOrigin() + Vector(0, 0, 600)  )
