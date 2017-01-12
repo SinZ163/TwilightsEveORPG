@@ -30,7 +30,6 @@ function teve_druid_summoner_armageddon:OnSpellStart()
     ParticleManager:SetParticleControl( nFXIndex, 0, self.target )
     ParticleManager:SetParticleControl( nFXIndex, 4, Vector(self.aoe, 1, 1) )
     ParticleManager:ReleaseParticleIndex( nFXIndex )
-
     EmitSoundOnLocationWithCaster( self.target, "Hero_OgreMagi.Fireblast.Target", self:GetCaster() )
 end
 

@@ -8,7 +8,7 @@ function modifier_teve_druid_summoner_regeneration:OnCreated( kv )
     local nFXIndex = ParticleManager:CreateParticle( "particles/hero/druid/summoner/summoner_regeneration.vpcf", PATTACH_POINT_FOLLOW, self:GetParent() )
     ParticleManager:SetParticleControlEnt( nFXIndex, 0, self:GetParent(), PATTACH_POINT_FOLLOW, "attach_hitloc", hTarget, true)
     ParticleManager:SetParticleControlEnt( nFXIndex, 1, self:GetParent(), PATTACH_POINT_FOLLOW, "attach_hitloc", hTarget, true)
-    
+
     self:AddParticle( nFXIndex, false, false, -1, false, false)
     EmitSoundOn("Hero_Chen.TeleportLoop", self:GetParent() )
 end

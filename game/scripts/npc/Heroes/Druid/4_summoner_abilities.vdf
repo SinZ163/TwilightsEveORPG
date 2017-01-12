@@ -105,6 +105,7 @@
         {
             "particle"  "particles/hero/druid/summoner/summoner_armageddon.vpcf"
             "particle"  "particles/hero/druid/summoner/summoner_armageddon_burnfire.vpcf"
+            "particle"  "particles/econ/courier/courier_onibi/courier_onibi_green_ambient_b.vpcf"
             "soundfile"	"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
             "soundfile"	"soundevents/game_sounds_heroes/game_sounds_warlock.vsndevts"
         }

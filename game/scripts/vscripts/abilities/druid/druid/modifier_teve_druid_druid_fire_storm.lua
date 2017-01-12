@@ -26,21 +26,19 @@ function modifier_teve_druid_druid_fire_storm:OnIntervalThink()
                             ability = self:GetAbility()        
                         }
 
-                        ApplyDamage( damage )
-                        --EmitSoundOn ()
+                        ApplyDamage(damage)
                     end
                 end 
-            end
-
-        local aoe = self:GetAbility():GetAOERadius()
-        local target = self:GetParent():GetAbsOrigin()
-        local nFXIndex = ParticleManager:CreateParticle( "particles/hero/druid/druid/druid_fire_storm.vpcf", PATTACH_CUSTOMORIGIN, nil)
-        ParticleManager:SetParticleControl( nFXIndex, 0, target )
-        ParticleManager:SetParticleControl( nFXIndex, 4, Vector(aoe, 1, 1) )
-        ParticleManager:ReleaseParticleIndex( nFXIndex )
+            end            
+            local aoe = self:GetAbility():GetAOERadius()
+            local target = self:GetParent():GetAbsOrigin()
+            local nFXIndex = ParticleManager:CreateParticle( "particles/hero/druid/druid/druid_fire_storm.vpcf", PATTACH_CUSTOMORIGIN, nil)
+            ParticleManager:SetParticleControl( nFXIndex, 0, target )
+            ParticleManager:SetParticleControl( nFXIndex, 4, Vector(aoe, 1, 1) )
+            ParticleManager:ReleaseParticleIndex( nFXIndex )
+            EmitSoundOnLocationWithCaster(self:GetAbility():GetCursorPosition(), "Hero_AbyssalUnderlord.Firestorm", self:GetCaster())
         end
 
         self.iter = self.iter + 1
-        --local nFXIndex = I'll do this later
     end
 end

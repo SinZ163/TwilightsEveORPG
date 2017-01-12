@@ -34,6 +34,7 @@ function modifier_teve_druid_summoner_lightning_storm:OnIntervalThink()
                 end 
             end
             local vTarget = self:GetParent():GetOrigin()
+
             for x=1,10 do
                 local nFXIndex = ParticleManager:CreateParticle( "particles/hero/druid/summoner/summoner_lightning_storm.vpcf", PATTACH_WORLDORIGIN, self:GetCaster() )
                 ParticleManager:SetParticleControl( nFXIndex, 0, self:GetParent():GetOrigin() + Vector(0, 0, 800)  )

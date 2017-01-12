@@ -4,6 +4,14 @@ LinkLuaModifier( "modifier_teve_druid_runemaster_feral_rage", "abilities/druid/r
 function teve_druid_runemaster_feral_rage:OnSpellStart()
     local feral_rage_duration = 10
     self:GetCaster():AddNewModifier( self:GetCaster(), self, "modifier_teve_druid_runemaster_feral_rage", { duration = feral_rage_duration } )
+
+    if self:GetCaster():HasModifier("modifier_teve_druid_runemaster_werebear") then
+        EmitSoundOn("Hero_LoneDruid.SavageRoar.Cast", self:GetCaster())
+    elseif self:GetCaster():HasModifier("modifier_teve_druid_runemaster_werewolf") then
+    	EmitSoundOn("Hero_Lycan.Howl", self:GetCaster())
+    else
+    	EmitSoundOn("Hero_Beastmaster.Primal_Roar", self:GetCaster())
+    end
 end
 
 function teve_druid_runemaster_feral_rage:GetManaCost(level)

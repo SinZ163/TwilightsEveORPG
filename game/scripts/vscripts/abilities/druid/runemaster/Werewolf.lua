@@ -3,6 +3,9 @@ LinkLuaModifier( "modifier_teve_druid_runemaster_werewolf", "abilities/druid/run
 
 function teve_druid_runemaster_werewolf:OnSpellStart()
     print("Wearwolf from Lua!")
+    if not self:GetCaster():HasModifier("modifier_teve_druid_runemaster_werewolf") then
+        EmitSoundOn("Hero_Lycan.Shapeshift.Cast", self:GetCaster())
+    end
 end
 
 function teve_druid_runemaster_werewolf:OnChannelFinish(interrupted)
