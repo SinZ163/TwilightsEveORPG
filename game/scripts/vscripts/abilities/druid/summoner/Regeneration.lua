@@ -6,6 +6,7 @@ function teve_druid_summoner_regeneration:OnSpellStart()
     local hTarget = self:GetCursorTarget()
     local regeneration_duration = 5
     hTarget:AddNewModifier( self:GetCaster(), self, "modifier_teve_druid_summoner_regeneration", { duration = regeneration_duration } )
+    EmitSoundOn("Hero_Chen.PenitenceCast", self:GetCaster() )
 end
 
 function teve_druid_summoner_regeneration:CastFilterResultTarget( hTarget )

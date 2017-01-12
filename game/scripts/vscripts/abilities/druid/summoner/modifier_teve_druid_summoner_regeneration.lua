@@ -10,6 +10,7 @@ function modifier_teve_druid_summoner_regeneration:OnCreated( kv )
     ParticleManager:SetParticleControlEnt( nFXIndex, 1, self:GetParent(), PATTACH_POINT_FOLLOW, "attach_hitloc", hTarget, true)
 
     self:AddParticle( nFXIndex, false, false, -1, false, false)
+    EmitSoundOn("Hero_Chen.TeleportLoop", self:GetParent() )
 end
 
 function modifier_teve_druid_summoner_regeneration:DeclareFunctions()
@@ -29,3 +30,8 @@ function modifier_teve_druid_summoner_regeneration:GetModifierConstantHealthRege
     --400 total health / 5 seconds
     return (400/5) * self:GetAbility():GetLevel()
 end
+
+function modifier_teve_druid_summoner_regeneration:OnDestroy()
+    EmitSoundOn("Hero_Chen.TeleportOut", self:GetParent() )
+    StopSoundOn("Hero_Chen.TeleportLoop", self:GetParent() )
+end    

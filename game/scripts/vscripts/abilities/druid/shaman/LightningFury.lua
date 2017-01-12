@@ -76,7 +76,6 @@ end
 
 function teve_druid_shaman_lightning_fury:LightningBounce(target, start_position)
     -- PARTICLE STUFF
-
     local attach_hitloc = target:ScriptLookupAttachment("attach_hitloc")
     local target_position = target:GetAttachmentOrigin(attach_hitloc)
     local particle = ParticleManager:CreateParticle("particles/items_fx/chain_lightning.vpcf", PATTACH_CUSTOMORIGIN, self.caster)
@@ -84,6 +83,7 @@ function teve_druid_shaman_lightning_fury:LightningBounce(target, start_position
     ParticleManager:SetParticleControl(particle, 1, target_position)
 
     -- END PARTICLE STUFF
+    EmitSoundOn("Hero_Zuus.ArcLightning.Target", target )
 
     damage_table = {
         victim = target,

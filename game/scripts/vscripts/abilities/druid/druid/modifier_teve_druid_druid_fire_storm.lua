@@ -29,8 +29,7 @@ function modifier_teve_druid_druid_fire_storm:OnIntervalThink()
                         ApplyDamage(damage)
                     end
                 end 
-            end
-            
+            end            
             local aoe = self:GetAbility():GetAOERadius()
             local target = self:GetParent():GetAbsOrigin()
             local nFXIndex = ParticleManager:CreateParticle( "particles/hero/druid/druid/druid_fire_storm.vpcf", PATTACH_CUSTOMORIGIN, nil)

@@ -26,6 +26,7 @@ function teve_druid_summoner_arctic_freeze:OnSpellStart()
     local nFXIndex = ParticleManager:CreateParticle( "particles/hero/druid/summoner/summoner_arctic_freeze.vpcf", PATTACH_ABSORIGIN, self:GetCaster() )
     ParticleManager:SetParticleControl( nFXIndex, 0, self.caster )
     ParticleManager:SetParticleControl( nFXIndex, 1, Vector(self.aoe, 1, 1) )
+    EmitSoundOn("Hero_Invoker.DeafeningBlast", self:GetCaster() )
 end
 
 function teve_druid_summoner_arctic_freeze:GetAOERadius()

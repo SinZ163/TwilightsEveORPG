@@ -7,6 +7,7 @@ function modifier_teve_druid_summoner_lightning_storm:OnCreated( kv )
 
     if IsServer() then
         self:StartIntervalThink( self.tick_rate )
+        EmitSoundOn("Hero_Razor.Storm.Loop", self:GetParent() )
     end
 end
 
@@ -32,15 +33,21 @@ function modifier_teve_druid_summoner_lightning_storm:OnIntervalThink()
                     end
                 end 
             end
+            local vTarget = self:GetParent():GetOrigin()
+
             for x=1,10 do
                 local nFXIndex = ParticleManager:CreateParticle( "particles/hero/druid/summoner/summoner_lightning_storm.vpcf", PATTACH_WORLDORIGIN, self:GetCaster() )
                 ParticleManager:SetParticleControl( nFXIndex, 0, self:GetParent():GetOrigin() + Vector(0, 0, 800)  )
                 ParticleManager:SetParticleControl( nFXIndex, 1, self:GetParent():GetOrigin() + RandomVector( 250 ) )
                 ParticleManager:ReleaseParticleIndex( nFXIndex )
+                EmitSoundOnLocationWithCaster( vTarget, "Hero_Zuus.GodsWrath.Target", self:GetCaster() )
             end
         end
 
         self.iter = self.iter + 1
-        --local nFXIndex = I'll do this later
     end
 end
+
+function modifier_teve_druid_summoner_lightning_storm:OnDestroy()
+    StopSoundOn("Hero_Razor.Storm.Loop", self:GetParent() )
+end    
