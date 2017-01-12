@@ -6,6 +6,7 @@ function teve_druid_shaman_regeneration:OnSpellStart()
     local hTarget = self:GetCursorTarget()
     local regeneration_duration = 15
     hTarget:AddNewModifier( self:GetCaster(), self, "modifier_teve_druid_shaman_regeneration", { duration = regeneration_duration } )
+    EmitSoundOn("Hero_Juggernaut.HealingWard.Cast", self:GetCaster() )
 end
 
 function teve_druid_shaman_regeneration:CastFilterResultTarget( hTarget )

@@ -6,6 +6,13 @@ function teve_druid_shaman_entangle:OnSpellStart()
 
     local hTarget = self:GetCursorTarget()
     hTarget:AddNewModifier( self:GetCaster(), self, "modifier_teve_druid_shaman_entangle", { duration = 3 } )
+    EmitSoundOnLocationWithCaster( hTarget:GetOrigin(),"Hero_Treant.Overgrowth.Target", self:GetCaster() )
+    EmitSoundOnLocationWithCaster( hTarget:GetOrigin(),"Hero_Treant.Overgrowth.Cast", self:GetCaster() )
+end
+
+function teve_druid_shaman_entangle:OnAbilityPhaseStart()
+    EmitSoundOn("Hero_Treant.Overgrowth.CastAnim", self:GetCaster() )
+    return true
 end
 
 function teve_druid_shaman_entangle:CastFilterResultTarget( hTarget )

@@ -4,14 +4,14 @@ function modifier_teve_druid_shaman_lightning_storm:OnCreated( kv )
     self.lightning_storm_damage = 40 * self:GetAbility():GetLevel()
     self.tick_rate = 0.1
     self.iter = 0
-
     if IsServer() then
         self:StartIntervalThink( self.tick_rate )
-
+        local vTarget = self:GetParent():GetOrigin()
         local nFXIndex = ParticleManager:CreateParticle( "particles/hero/druid/shaman/shamancloudblack.vpcf", PATTACH_WORLDORIGIN, self:GetCaster() )
         ParticleManager:SetParticleControl( nFXIndex, 0, self:GetParent():GetOrigin() )
         ParticleManager:SetParticleControl( nFXIndex, 1, self:GetParent():GetOrigin() + Vector(0, 0, 600)  )
         ParticleManager:ReleaseParticleIndex( nFXIndex )
+        EmitSoundOn("Hero_Razor.Storm.Loop", self:GetParent() )
     end
 end
 
@@ -33,19 +33,23 @@ function modifier_teve_druid_shaman_lightning_storm:OnIntervalThink()
                         }
 
                         ApplyDamage( damage )
-                        --EmitSoundOn ()
                     end
                 end 
             end
-
+            local vTarget = self:GetParent():GetOrigin()
             for x=1,10 do
                 local nFXIndex = ParticleManager:CreateParticle( "particles/hero/druid/shaman/shamanthundergods_wrath_start_bolt_child.vpcf", PATTACH_CUSTOMORIGIN, self:GetCaster() )
-                ParticleManager:SetParticleControl( nFXIndex, 0, self:GetParent():GetOrigin() + Vector(0, 0, 550) )
-                ParticleManager:SetParticleControl( nFXIndex, 1, self:GetParent():GetOrigin() + RandomVector( 350 ) )
+                ParticleManager:SetParticleControl( nFXIndex, 0, vTarget + Vector(0, 0, 550) )
+                ParticleManager:SetParticleControl( nFXIndex, 1, vTarget + RandomVector( 350 ) )
                 ParticleManager:ReleaseParticleIndex( nFXIndex )
             end
+            EmitSoundOnLocationWithCaster( vTarget, "Hero_Zuus.LightningBolt.Cast", self:GetCaster() )
         end
 
         self.iter = self.iter + 1
     end
 end
+
+function modifier_teve_druid_shaman_lightning_storm:OnDestroy()
+    StopSoundOn("Hero_Razor.Storm.Loop", self:GetParent() )
+end    

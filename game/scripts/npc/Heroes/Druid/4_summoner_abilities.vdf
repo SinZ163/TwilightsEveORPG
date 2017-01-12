@@ -40,6 +40,7 @@
         "precache"
         {
             "particle"  "particles/hero/druid/summoner/summoner_regeneration.vpcf"
+            "soundfile"	"soundevents/game_sounds_heroes/game_sounds_chen.vsndevts"
         }
     }
     "teve_druid_summoner_lightning_storm"
@@ -60,6 +61,8 @@
         "precache"
         {
             "particle"  "particles/hero/druid/summoner/summoner_lightning_storm.vpcf"
+            "soundfile" "soundevents/game_sounds_heroes/game_sounds_razor.vsndevts"
+            "soundfile" "soundevents/game_sounds_heroes/game_sounds_zuus.vsndevts"
         }
     }
     "teve_druid_summoner_arctic_freeze"
@@ -79,6 +82,7 @@
         {
             "particle"  "particles/units/heroes/hero_crystalmaiden/maiden_frostbite_buff.vpcf"
             "particle"  "particles/hero/druid/summoner/summoner_arctic_freeze.vpcf"
+            "soundfile"	"soundevents/game_sounds_heroes/game_sounds_crystalmaiden.vsndevts"
         }
     }
     "teve_druid_summoner_armageddon"
@@ -100,7 +104,9 @@
         "precache"
         {
             "particle"  "particles/hero/druid/summoner/summoner_armageddon.vpcf"
-            "particle"	"particles/econ/courier/courier_onibi/courier_onibi_green_ambient_b.vpcf"
+            "particle"  "particles/hero/druid/summoner/summoner_armageddon_burnfire.vpcf"
+            "soundfile"	"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
+            "soundfile"	"soundevents/game_sounds_heroes/game_sounds_warlock.vsndevts"
         }
     }
 }

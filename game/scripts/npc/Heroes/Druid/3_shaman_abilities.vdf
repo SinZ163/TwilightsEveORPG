@@ -18,6 +18,7 @@
         "precache"
         {
             "particle"  "particles/items_fx/chain_lightning.vpcf"
+            "soundfile" "soundevents/game_sounds_heroes/game_sounds_zuus.vsndevts"
         }
     }
     "teve_druid_shaman_regeneration"
@@ -38,6 +39,7 @@
         "precache"
         {
             "particle"  "particles/hero/druid/shaman/shamanregeneration.vpcf"
+            "soundfile" "soundevents/game_sounds_heroes/game_sounds_juggernaut.vsndevts"
         }
     }
     "teve_druid_shaman_entangle"
@@ -58,6 +60,7 @@
         "precache"
         {
             "particle"  "particles/hero/druid/shaman/shamanentanglevines.vpcf"
+            "soundfile" "soundevents/game_sounds_heroes/game_sounds_treant.vsndevts"
         }
     }
     "teve_druid_shaman_lightning_storm"
@@ -79,6 +82,8 @@
         "precache"
         {
             "particle"  "particles/hero/druid/shaman/shamanthundergods_wrath_start_bolt_child.vpcf"
+            "soundfile" "soundevents/game_sounds_heroes/game_sounds_razor.vsndevts"
+            "soundfile" "soundevents/game_sounds_heroes/game_sounds_zuus.vsndevts"
         }
     }
 }
