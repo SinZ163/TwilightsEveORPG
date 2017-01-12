@@ -18,6 +18,7 @@
         "precache"
         {
             "particle"  "particles/hero/druid/druid/druid_disabling_roots.vpcf"
+            "soundfile" "soundevents/game_sounds_heroes/game_sounds_treant.vsndevts"
         }
     }
     "teve_druid_druid_rejuvenation"
@@ -38,6 +39,7 @@
         "precache"
         {
             "particle"  "particles/items_fx/healing_tango.vpcf"
+            "soundfile" "soundevents/game_sounds_creeps.vsndevts"
         }
     }
     "teve_druid_druid_thorns_aura"
@@ -71,6 +73,7 @@
         "precache"
         {
             "particle"  "particles/hero/druid/druid/druid_fire_storm.vpcf"
+            "soundfile" "soundevents/game_sounds_heroes/game_sounds_abyssal_underlord.vsndevts"
         }
     }
 }

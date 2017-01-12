@@ -6,6 +6,7 @@ function teve_druid_druid_rejuvenation:OnSpellStart()
     local hTarget = self:GetCursorTarget()
     local rejuvenation_duration = 15
     hTarget:AddNewModifier( self:GetCaster(), self, "modifier_teve_druid_druid_rejuvenation", { duration = rejuvenation_duration } )
+    EmitSoundOn("n_creep_ForestTrollHighPriest.Heal", hTarget)
 end
 
 function teve_druid_druid_rejuvenation:CastFilterResultTarget( hTarget )

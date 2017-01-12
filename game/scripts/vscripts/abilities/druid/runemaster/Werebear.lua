@@ -3,6 +3,9 @@ LinkLuaModifier( "modifier_teve_druid_runemaster_werebear", "abilities/druid/run
 
 function teve_druid_runemaster_werebear:OnSpellStart()
     print("Wearbear from Lua!")
+    if not self:GetCaster():HasModifier("modifier_teve_druid_runemaster_werebear") then
+        EmitSoundOn("Hero_LoneDruid.TrueForm.Cast", self:GetCaster())
+    end
 end
 
 function teve_druid_runemaster_werebear:OnChannelFinish(interrupted)
